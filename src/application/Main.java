@@ -16,10 +16,10 @@ public class Main extends Application {
 		{
 			Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
 			primaryStage.initStyle(StageStyle.UNDECORATED);
-            
+           
 			primaryStage.setScene(new Scene(root,520,400));
 			primaryStage.show();
-		} 
+		}
 	}
 	
 	public static void main(String[] args) {

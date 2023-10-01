@@ -30,7 +30,6 @@ public class controller{
 		}
 	}
 	
-	
 	public void cancelButtonOnAction(ActionEvent e) {
 		Stage stage =(Stage) cancelButton.getScene().getWindow();
         stage.close();	
