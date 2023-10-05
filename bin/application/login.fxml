@@ -33,7 +33,7 @@
          <center>
             <AnchorPane prefHeight="400.0" prefWidth="298.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="Password" layoutX="107.0" layoutY="169.0" prefHeight="26.0" prefWidth="132.0" promptText="Password" />
+                  <TextField fx:id="PwdField" layoutX="107.0" layoutY="169.0" prefHeight="26.0" prefWidth="132.0" promptText="Password" />
                   <Label fx:id="passwordTextField" alignment="CENTER" layoutX="67.0" layoutY="43.0" prefHeight="27.0" prefWidth="179.0" text="User Login">
                      <font>
                         <Font name="System Bold" size="18.0" />

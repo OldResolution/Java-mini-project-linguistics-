@@ -27,7 +27,7 @@ public class Signupcontroller implements Initializable{
 
 			@Override
 			public void handle(ActionEvent event) {
-				DBUtils.LoginUser(event, usernameTextField.getText(), passwordTextfield.getText());
+				DBUtils.SignupUser(event, usernameTextField.getText(), passwordTextfield.getText());
 			}
 			
 		});

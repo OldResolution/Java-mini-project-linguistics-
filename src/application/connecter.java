@@ -9,7 +9,7 @@ public class connecter {
 		try
 		{
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/language_learning","root","oracle");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/linguistics","root","oracle");
 	}catch(Exception e){
 		System.out.println(e);
 	}

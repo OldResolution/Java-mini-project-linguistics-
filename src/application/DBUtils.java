@@ -55,7 +55,7 @@ public class DBUtils {
 		ResultSet resultSet = null;
 		
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/language_learning","root","oracle");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/linguistics","root","oracle");
 			preparedStatement = connection.prepareStatement("SELECT *FROM users WHERE username = ?");
 			preparedStatement.setString(1, username);
 			resultSet = preparedStatement.executeQuery();
@@ -66,7 +66,7 @@ public class DBUtils {
 				alert.setContentText("You cannot use this Username");
 				alert.show();
 			}else {
-				psInsert = connection.prepareStatement("INSERT INTO users(username,password VALUES (?,?)");
+				psInsert = connection.prepareStatement("INSERT INTO users VALUES (?,?)");
 				psInsert.setString(1, username);
 				psInsert.setString(2, password);
 				psInsert.executeUpdate();
@@ -110,7 +110,7 @@ public class DBUtils {
 		PreparedStatement preparedStatements = null;
 		ResultSet resultSet = null;
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/language_learning","root","oracle");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/linguistics","root","oracle");
 			preparedStatements= connection.prepareStatement("SELECT password FROM users WHERE username=?");
 			preparedStatements.setString(1,username);
 			resultSet= preparedStatements.executeQuery();

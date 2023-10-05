@@ -23,7 +23,7 @@ public class logincontroller implements Initializable {
 	@FXML
 	private TextField usernameTextField;
 	@FXML
-	private TextField PasswordField;
+	private TextField PwdField;
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
@@ -31,7 +31,7 @@ public class logincontroller implements Initializable {
 
 			@Override
 			public void handle(ActionEvent event) {
-				DBUtils.LoginUser(event, usernameTextField.getText(), PasswordField.getText());
+				DBUtils.LoginUser(event, usernameTextField.getText(), PwdField.getText());
 				
 			}
 			
