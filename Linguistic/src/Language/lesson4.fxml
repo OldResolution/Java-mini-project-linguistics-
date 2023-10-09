@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="2030.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="85.0" layoutY="59.0" text="S">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="357.0" text="S for Sun">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sun.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="286.0" layoutY="59.0" text="T">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="357.0" text="T for Tiger">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="258.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tiger.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="554.0" layoutY="59.0" text="U">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="480.0" layoutY="357.0" text="U for Umbrella">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="511.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@umbrella.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="858.0" layoutY="59.0" text="V">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="804.0" layoutY="357.0" text="V for Vase">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="814.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@vase.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1101.0" layoutY="59.0" text="W">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="1052.0" layoutY="357.0" text="W for Watch">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1104.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@watch.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1393.0" layoutY="59.0" text="X">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="1332.0" layoutY="357.0" text="X for X-mas">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1363.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@xmas.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1647.0" layoutY="59.0" text="Y">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="1593.0" layoutY="357.0" text="Y for Yacht">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1611.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@yacht.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1902.0" layoutY="59.0" text="Z">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="1829.0" layoutY="357.0" text="Z for Zebra">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1862.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@zebra.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
+
