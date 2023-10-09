@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="87.0" layoutY="49.0" prefHeight="142.0" prefWidth="115.0" text=" A">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@apple.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="356.0" text="A for Apple">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="49.0" prefHeight="142.0" prefWidth="115.0" text="B">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="323.0" layoutY="356.0" text="B for Ball">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="596.0" layoutY="49.0" prefHeight="142.0" prefWidth="82.0" text="C">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="575.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cat.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="-104.0" text="Label" />
+      <Label layoutX="822.0" layoutY="49.0" text="D">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="795.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dog.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="795.0" layoutY="356.0" text="D for Dog">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="1055.0" layoutY="49.0" text="E">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1006.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@elephant.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1006.0" layoutY="356.0" text="E for Elephant">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="356.0" text="C for Cat">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="323.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ball.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
+

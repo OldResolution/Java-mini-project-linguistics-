@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="107.0" layoutY="42.0" prefHeight="142.0" prefWidth="56.0" text="F">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="23.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fish.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="353.0" text="F for Fish">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="43.0" text="G">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="317.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@grapes.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="286.0" layoutY="353.0" text="G for Grapes">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="601.0" layoutY="43.0" text="H">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="538.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hat.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="558.0" layoutY="353.0" text="H for Hat">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="877.0" layoutY="43.0" text="I">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="832.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icecream.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="792.0" layoutY="353.0" text="I for Icecream">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="1130.0" layoutY="43.0" text="J">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="1086.0" layoutY="353.0" text="J for Jug">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1080.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@jug.jpg" />
+         </image>
+      </ImageView>
+      <Label text="Label" />
+      <Label layoutX="1351.0" layoutY="43.0" text="K">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="1306.0" layoutY="353.0" text="K for  Kite">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1328.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kite.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
+

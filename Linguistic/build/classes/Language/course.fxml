@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.CourseController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="140.0" style="-fx-background-color: #0e057b;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Profile" textFill="#faf4f4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="CourseButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#CoursesAction" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Courses " textFill="#f2f0f0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="LessonButton" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#LessonAction" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Lessons" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="119.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Quizzes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="173.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Report" textFill="#faeeee">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                <Button mnemonicParsing="false" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Logout">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="86.0" prefWidth="700.0" style="-fx-background-color: #0e057b;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="297.0" style="-fx-background-color: TRANSPARENT;" text="   LINGUISTICS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="dashboardpage" layoutX="53.0" layoutY="108.0" mnemonicParsing="false" prefHeight="171.0" prefWidth="453.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-background-color: #1703da; -fx-border-color: black;" text="ENGLISH" textFill="#fdfdff">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="72.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+ </BorderPane>
