@@ -8,38 +8,38 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.lessoncontroller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <VBox prefHeight="400.0" prefWidth="140.0" style="-fx-background-color: #0e057b;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="dashboardpage" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Profile" textFill="#faf4f4">
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Profile" textFill="#faf4f4">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="coursepage" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Courses " textFill="#f2f0f0">
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Courses " textFill="#f2f0f0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lessonpage" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Lessons" textFill="WHITE">
+            <Button layoutX="10.0" layoutY="64.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Lessons" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="quizzespage" layoutX="10.0" layoutY="119.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Quizzes" textFill="WHITE">
+            <Button layoutX="10.0" layoutY="119.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Quizzes" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="reportpage" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Report" textFill="#faeeee">
+            <Button layoutX="10.0" layoutY="173.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Report" textFill="#faeeee">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
                <buttons>
-                <Button fx:id="logout" mnemonicParsing="false" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Logout">
+                <Button mnemonicParsing="false" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Logout">
                      <font>
                         <Font name="System Bold Italic" size="21.0" />
                      </font>
@@ -63,22 +63,22 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="lesson1" layoutX="55.0" layoutY="101.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 1">
+            <Button layoutX="55.0" layoutY="101.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 1">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson2" layoutX="331.0" layoutY="101.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 2">
+            <Button layoutX="331.0" layoutY="101.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 2">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson3" layoutX="55.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 3">
+            <Button layoutX="55.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 3">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson4" layoutX="331.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 4">
+            <Button layoutX="331.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #6445e9; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 4">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>

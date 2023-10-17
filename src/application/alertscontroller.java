@@ -5,7 +5,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
 
-public class  logincontroller {
+public class  alertscontroller {
 
 	public static String tfTransid="";
 	public static String tfTranscateg="";
@@ -51,7 +51,7 @@ public class  logincontroller {
 	public static boolean checkLogin1(String name, String pass) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException{//to throw basic exceptions
 		// connecting database
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb", "root", "oracle");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Exp_Tracker", "root", "oracle");
 		Statement stmt = con.createStatement();
 
 		// SELECT query
