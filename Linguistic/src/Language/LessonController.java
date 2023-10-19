@@ -56,4 +56,36 @@ public class LessonController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    void OpenReport(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("ReportFeature.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+    }
+    @FXML
+    void LogoutAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+    }
+	@FXML
+    void OpenProfile(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+    }
+	@FXML
+	void OpenCourse(ActionEvent event) throws Exception {
+		Parent root = FXMLLoader.load(getClass().getResource("course.fxml"));
+			stage= (Stage) ((Node) event.getSource()).getScene().getWindow();
+			scene = new Scene (root);
+			stage.setScene(scene);
+			stage.show();
+	}
 }

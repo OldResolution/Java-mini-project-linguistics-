@@ -12,7 +12,7 @@
    <left>
       <VBox prefHeight="400.0" prefWidth="140.0" style="-fx-background-color: #0e057b;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="dashboardpage" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Profile" textFill="#faf4f4">
+            <Button fx:id="dashboardpage" mnemonicParsing="false" onAction="#OpenProfile" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Profile" textFill="#faf4f4">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -32,7 +32,7 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="reportpage" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Report" textFill="#faeeee">
+            <Button fx:id="reportpage" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" onAction="#OpenReport" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Report" textFill="#faeeee">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>

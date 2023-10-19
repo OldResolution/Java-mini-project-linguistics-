@@ -49,7 +49,7 @@ public class Controller {
         // Database connection
         String Url = "jdbc:mysql://localhost:3306/language";
         String DBUser = "root";
-        String DBPassword = "joshua123";
+        String DBPassword = "oracle";
 
         try (Connection connection = DriverManager.getConnection(Url, DBUser, DBPassword)) {
             String query = "SELECT * FROM login WHERE Username = ? AND Password = ?";
