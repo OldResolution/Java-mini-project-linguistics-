@@ -64,7 +64,7 @@ public class SignUpController implements Initializable {
 
     String Url = "jdbc:mysql://localhost:3306/language";
     String DBUser = "root";
-    String DBPassword = "joshua123";
+    String DBPassword = "oracle";
 
     try (Connection connection = DriverManager.getConnection(Url, DBUser, DBPassword)) {
         String query = "INSERT INTO login (username, password) VALUES (?, ?)";

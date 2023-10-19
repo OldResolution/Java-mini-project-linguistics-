@@ -12,17 +12,17 @@
    <left>
       <VBox prefHeight="400.0" prefWidth="140.0" style="-fx-background-color: #0e057b;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Profile" textFill="#faf4f4">
+            <Button fx:id="dashboard" mnemonicParsing="false" onAction="#OpenProfile" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Profile" textFill="#faf4f4">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="CourseButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#CoursesAction" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Courses " textFill="#f2f0f0">
+            <Button fx:id="CourseButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Courses " textFill="#f2f0f0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="LessonButton" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#LessonAction" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Lessons" textFill="WHITE">
+            <Button fx:id="LessonButton" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#OpenLessons" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Lessons" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -32,14 +32,14 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="173.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Report" textFill="#faeeee">
+            <Button fx:id="reportbutton" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" onAction="#OpenReport" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-image-width: 0px 0px 2px 0px;" text="Report" textFill="#faeeee">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Button>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
                <buttons>
-                <Button mnemonicParsing="false" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Logout">
+                <Button fx:id="logout" mnemonicParsing="false" onAction="#LogoutAction" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Logout">
                      <font>
                         <Font name="System Bold Italic" size="21.0" />
                      </font>
