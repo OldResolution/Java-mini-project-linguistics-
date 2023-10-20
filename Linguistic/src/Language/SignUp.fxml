@@ -12,7 +12,7 @@
          <children>
             <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="520.0">
                <children>
-                  <Button fx:id="loginpageButton" alignment="TOP_CENTER" layoutX="168.0" layoutY="322.0" mnemonicParsing="false" onAction="#OpenLoginPage" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log in!!" textFill="#263f73" underline="true" />
+                  <Button fx:id="loginpageButton" alignment="TOP_CENTER" layoutX="170.0" layoutY="344.0" mnemonicParsing="false" onAction="#OpenLoginPage" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log in!!" textFill="#263f73" underline="true" />
                   <Label alignment="CENTER" layoutX="67.0" layoutY="43.0" prefHeight="27.0" prefWidth="179.0" text="Sign Up">
                      <font>
                         <Font name="System Bold" size="18.0" />
@@ -21,18 +21,18 @@
                         <InnerShadow />
                      </effect>
                   </Label>
-                  <Label layoutX="36.0" layoutY="130.0" text="Username">
+                  <Label layoutX="36.0" layoutY="192.0" text="Username">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="38.0" layoutY="184.0" text="Password">
+                  <Label layoutX="38.0" layoutY="232.0" text="Password">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="usernameTextField" layoutX="107.0" layoutY="127.0" prefHeight="26.0" prefWidth="165.0" promptText="Username" />
-                  <Button fx:id="SignupButton" layoutX="32.0" layoutY="251.0" mnemonicParsing="false" onAction="#SignupAction" prefHeight="38.0" prefWidth="238.0" style="-fx-background-color: #263F73; -fx-cursor: hand;" text="Sign Up" textFill="WHITE">
+                  <TextField fx:id="usernameTextField" layoutX="107.0" layoutY="189.0" prefHeight="26.0" prefWidth="165.0" promptText="Username" />
+                  <Button fx:id="SignupButton" layoutX="32.0" layoutY="284.0" mnemonicParsing="false" onAction="#SignupAction" prefHeight="38.0" prefWidth="238.0" style="-fx-background-color: #263F73; -fx-cursor: hand;" text="Sign Up" textFill="WHITE">
                      <font>
                         <Font name="SansSerif Regular" size="12.0" />
                      </font>
@@ -53,12 +53,24 @@
                         <Line endX="89.0" layoutX="101.0" layoutY="176.0" startX="-75.0" />
                      </children>
                   </AnchorPane>
-                  <Label layoutX="54.0" layoutY="326.0" prefHeight="18.0" prefWidth="126.0" text="Already Registered?">
+                  <Label layoutX="53.0" layoutY="348.0" prefHeight="18.0" prefWidth="126.0" text="Already Registered?">
                      <font>
                         <Font name="SansSerif Bold" size="12.0" />
                      </font>
                   </Label>
-            <TextField fx:id="passwordTextField" layoutX="107.0" layoutY="181.0" prefHeight="26.0" prefWidth="165.0" promptText="Password" />
+            <TextField fx:id="passwordTextField" layoutX="107.0" layoutY="229.0" prefHeight="26.0" prefWidth="165.0" promptText="Password" />
+            <Label layoutX="29.0" layoutY="121.0" prefHeight="26.0" prefWidth="75.0" text="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="158.0" prefHeight="26.0" prefWidth="75.0" text="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="106.0" layoutY="121.0" prefHeight="20.0" prefWidth="166.0" promptText="First name" />
+            <TextField layoutX="106.0" layoutY="158.0" prefHeight="18.0" prefWidth="166.0" promptText="Last name" />
                </children>
             </AnchorPane>
          </children>

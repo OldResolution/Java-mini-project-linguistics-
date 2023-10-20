@@ -34,7 +34,14 @@ public class CourseController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
+    @FXML
+    void OpenCourses(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("course.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+    }
     @FXML
     void OpenLessons(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("lesson.fxml"));
@@ -62,6 +69,22 @@ public class CourseController implements Initializable {
     @FXML
     void OpenProfile(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+    }
+    @FXML
+    void OpenQuiz(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("QuizPage.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+    }	
+    @FXML
+    void OpenQL(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("QLpage.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);

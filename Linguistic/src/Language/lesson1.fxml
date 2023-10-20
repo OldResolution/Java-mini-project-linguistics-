@@ -1,89 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.lesson1controller">
    <children>
-      <Label layoutX="87.0" layoutY="49.0" prefHeight="142.0" prefWidth="115.0" text=" A">
-         <font>
-            <Font name="System Bold" size="96.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@apple.jpg" />
-         </image>
-      </ImageView>
-      <Label layoutX="47.0" layoutY="356.0" text="A for Apple">
-         <font>
-            <Font name="System Bold Italic" size="36.0" />
-         </font>
-      </Label>
-      <Label layoutX="358.0" layoutY="49.0" prefHeight="142.0" prefWidth="115.0" text="B">
-         <font>
-            <Font name="System Bold" size="96.0" />
-         </font>
-      </Label>
-      <Label layoutX="323.0" layoutY="356.0" text="B for Ball">
-         <font>
-            <Font name="System Bold Italic" size="36.0" />
-         </font>
-      </Label>
-      <Label layoutX="596.0" layoutY="49.0" prefHeight="142.0" prefWidth="82.0" text="C">
-         <font>
-            <Font name="System Bold" size="96.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="575.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@cat.jpg" />
-         </image>
-      </ImageView>
-      <Label layoutX="14.0" layoutY="-104.0" text="Label" />
-      <Label layoutX="822.0" layoutY="49.0" text="D">
-         <font>
-            <Font name="System Bold" size="96.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="795.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@dog.jpg" />
-         </image>
-      </ImageView>
-      <Label layoutX="795.0" layoutY="356.0" text="D for Dog">
-         <font>
-            <Font name="System Bold Italic" size="36.0" />
-         </font>
-      </Label>
-      <Label layoutX="1055.0" layoutY="49.0" text="E">
-         <font>
-            <Font name="System Bold" size="96.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1006.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@elephant.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="1006.0" layoutY="356.0" text="E for Elephant">
-         <font>
-            <Font name="System Bold Italic" size="36.0" />
-         </font>
-      </Label>
-      <Label layoutX="575.0" layoutY="356.0" text="C for Cat">
-         <font>
-            <Font name="System Bold Italic" size="36.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="323.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@ball.jpg" />
-         </image>
-      </ImageView>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191970; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="goback" mnemonicParsing="false" onAction="#getback" prefHeight="48.0" prefWidth="60.0" style="-fx-background-color: #ff0000;" text="GO BACK" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="5.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="SansSerif Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="audiocontrol" fitHeight="70.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/audio.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="pronounce" alignment="BASELINE_LEFT" editable="false" prefHeight="74.0" prefWidth="262.0" text=" A-ऐ">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-radius: 1px; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="last" mnemonicParsing="false" onAction="#last" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3;" text="Previous" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="90.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3; -fx-border-radius: 25px;" text="Next" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="90.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="apple" fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../contents/apple.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="info" alignment="BASELINE_LEFT" editable="false" layoutX="78.0" layoutY="211.0" prefHeight="63.0" prefWidth="264.0" />
+                  <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
+                  <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
    </children>
 </AnchorPane>
-
