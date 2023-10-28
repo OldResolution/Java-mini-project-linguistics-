@@ -12,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
@@ -21,7 +22,10 @@ import javafx.stage.StageStyle;
 public class lesson2controller implements Initializable{
 
 	@FXML
-	public TextField pronounce,info;
+	public TextField pronounce;
+	
+	@FXML
+	public Label info;
 	
 	@FXML
 	public ImageView audiocontrol,example;
@@ -33,10 +37,14 @@ public class lesson2controller implements Initializable{
 	
 	private Stage stage;
 	private Scene scene;
+	
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 		start();
+		english();
+		hindi();
 	}
 	 public void start(){
 		 switch (counter) {
@@ -59,8 +67,9 @@ public class lesson2controller implements Initializable{
 			 pronounce.setText("K - के (kay)");
 			 break;
 		 }
-            
-	}public void next(ActionEvent event) {
+	 }
+	 
+	 public void next(ActionEvent event) {
 		if (counter==6) {
 			try {
 				 Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
@@ -78,6 +87,8 @@ public class lesson2controller implements Initializable{
 		}else {
 			counter++;
 			start();
+			english();
+			hindi();
 		}
 		}
 		public void last(ActionEvent event) {
@@ -98,6 +109,8 @@ public class lesson2controller implements Initializable{
 		}else {
 			counter--;
 			start();
+			english();
+			hindi();
 			}
 		}
 			@FXML
@@ -107,5 +120,48 @@ public class lesson2controller implements Initializable{
 			scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
+			}
+			public void english() {
+				switch (counter) {
+				 case 1:
+					 info.setText("Position in Alphabet: 6th. \n Phonetic Pronunciation: /ɛf/");
+					 break;
+				 case 2:
+					 info.setText("Position in Alphabet: 7th. \t Phonetic Pronunciation: /dʒi");
+					 break;
+				 case 3:
+					 info.setText("Position in Alphabet: 8th. \t Phonetic Pronunciation: /eɪʧ/ ");
+					 break;
+				 case 4:
+					 info.setText("Position in Alphabet: 9th. \t Phonetic Pronunciation: /aɪ/ ");
+					 break;
+				 case 5:
+					 info.setText("Position in Alphabet: 10th. \t Phonetic Pronunciation: /dʒeɪ/");
+					 break;
+				 case 6:
+				 	info.setText("Position in Alphabet: 11th. \t Phonetic Pronunciation: /keɪ/");
+				 }
+			}
+			public void hindi() {
+				switch (counter) {
+				 case 1:
+					 info.setText("वर्णमाला में स्थान: छठा | \t ध्वनिक उच्चारण: /एफ/");
+					 break;
+				 case 2:
+					 info.setText("वर्णमाला में स्थान: सातवाँ | \t ध्वनिक उच्चारण: /जी/");
+					 break;
+				 case 3:
+					 info.setText("वर्णमाला में स्थान: आठवाँ | \t ध्वनिक उच्चारण: /एच/");
+					 break;
+				 case 4:
+					 info.setText("वर्णमाला में स्थान: नौवाँ | \t ध्वनिक उच्चारण: /आई/");
+					 break;
+				 case 5:
+					 info.setText("वर्णमाला में स्थान: दसवाँ | \t ध्वनिक उच्चारण: /जे/");
+					 break;
+				 case 6:
+		 			 info.setText("वर्णमाला में स्थान: ग्यारहवाँ | \t ध्वनिक उच्चारण: /के/");
+		 			 break;
+				 }
 			}
 }

@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -80,9 +81,13 @@
                         <Image url="@../contents/fish.jpg" />
                      </image>
                   </ImageView>
-                  <TextField fx:id="info" alignment="BASELINE_LEFT" editable="false" layoutX="78.0" layoutY="211.0" prefHeight="63.0" prefWidth="264.0" />
                   <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
                   <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
+                  <Label fx:id="info" layoutX="92.0" layoutY="214.0" prefHeight="64.0" prefWidth="184.0" text="वर्णमाला में स्थान: छठा | \t ध्वनिक उच्चारण: /एफ/" wrapText="true">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
          </center>

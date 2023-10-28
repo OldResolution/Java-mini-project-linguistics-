@@ -62,7 +62,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="reportbutton" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" onAction="#OpenReport" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: white; -fx-border-width: 0.1px;" text="Report" textFill="#faeeee">
+            <Button fx:id="reportbutton" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" onAction="#OpenReport" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: white; -fx-border-width: 0.1px;" text="FeedBack" textFill="#faeeee">
                <font>
                   <Font name="SansSerif Bold" size="16.0" />
                </font>

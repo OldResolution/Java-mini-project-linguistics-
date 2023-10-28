@@ -64,7 +64,7 @@
                            </image></ImageView>
                      </graphic>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: #FFFFFF; -fx-border-width: 0.1px;" text="Report" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: #FFFFFF; -fx-border-width: 0.1px;" text="FeedBack" textFill="WHITE">
                      <font>
                         <Font name="SansSerif Bold" size="16.0" />
                      </font>

@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
@@ -21,7 +22,10 @@ import javafx.stage.StageStyle;
 public class lesson4controller implements Initializable{
 
 	@FXML
-	public TextField pronounce,info;
+	public TextField pronounce;
+	
+	@FXML
+	public Label info;
 	
 	@FXML
 	public ImageView audiocontrol,example;
@@ -39,6 +43,8 @@ public class lesson4controller implements Initializable{
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 		start();
+		english();
+		hindi();
 	}
 	 public void start(){
 		 switch (counter) {
@@ -87,6 +93,8 @@ public class lesson4controller implements Initializable{
 		 }else {
 		 	counter++;
 		 	start();
+		 	english();
+		 	hindi();
 		 }
 		 }
 		 public void last(ActionEvent event) {
@@ -117,4 +125,60 @@ public class lesson4controller implements Initializable{
 		 	stage.setScene(scene);
 		 	stage.show();
 		 	}
-		 }
+		 	public void english() {
+		 		switch (counter) {
+		 		 case 1:
+		 			 info.setText("Position in Alphabet: 19th. \n Phonetic Pronunciation: /ɛs/");
+		 			 break;
+		 		 case 2:
+		 			 info.setText("Position in Alphabet: 20th. \t Phonetic Pronunciation: /ti/");
+		 			 break;
+		 		 case 3:
+		 			 info.setText("Position in Alphabet: 21st. \t Phonetic Pronunciation: /ju/ ");
+		 			 break;
+		 		 case 4:
+		 			 info.setText("Position in Alphabet: 22nd. \t Phonetic Pronunciation: /vi/");
+		 			 break;
+		 		 case 5:
+		 			 info.setText("Position in Alphabet: 23rd. \t Phonetic Pronunciation: /dʌblju/");
+		 			 break;
+		 		case 6:
+		 			 info.setText("Position in Alphabet: 24th. \t Phonetic Pronunciation: /ɛks/");
+		 			 break;
+		 		case 7:
+		 			 info.setText("Position in Alphabet: 25th. \t Phonetic Pronunciation: /waɪ/");
+		 			 break;
+		 		case 8:
+		 			 info.setText("Position in Alphabet: 26th. \t Phonetic Pronunciation: /zɛd/");
+		 			 break;
+		 		 }
+		 	}
+		 	public void hindi() {
+		 		switch (counter) {
+		 		 case 1:
+		 			 info.setText("वर्णमाला में स्थान: उन्नीसवाँ | \t ध्वनिक उच्चारण: /एस/");
+		 			 break;
+		 		 case 2:
+		 			 info.setText("वर्णमाला में स्थान: बीसवा | \t ध्वनिक उच्चारण: /टी/");
+		 			 break;
+		 		 case 3:
+		 			 info.setText("वर्णमाला में स्थान: इक्कीसवा | \t ध्वनिक उच्चारण: /यू/");
+		 			 break;
+		 		 case 4:
+		 			 info.setText("वर्णमाला में स्थान: बाईसवा | \t ध्वनिक उच्चारण: /वी/");
+		 			 break;
+		 		 case 5:
+		 			 info.setText("वर्णमाला में स्थान: तेइसवा | \t ध्वनिक उच्चारण: /डब्ल्यू/");
+		 			 break;
+		 		case 6:
+		 			 info.setText("वर्णमाला में स्थान: चौबीसवा | \t ध्वनिक उच्चारण: /एक्स/");
+		 			 break;
+		 		case 7:
+		 			 info.setText("वर्णमाला में स्थान: पच्चीसवा | \t ध्वनिक उच्चारण: /वाई/");
+		 			 break;
+		 		case 8:
+		 			 info.setText("वर्णमाला में स्थान: छब्बीसवा | \t ध्वनिक उच्चारण: /ज़ेड/");
+		 			 break;
+		 		 }
+		 	}
+}
