@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
@@ -21,7 +22,10 @@ import javafx.stage.StageStyle;
 public class lesson3controller implements Initializable {
 
 	@FXML
-	public TextField pronounce,info;
+	public TextField pronounce;
+	
+	@FXML
+	public Label info;
 	
 	@FXML
 	public ImageView audiocontrol,example;
@@ -37,6 +41,8 @@ public class lesson3controller implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		start();
+		english();
+		hindi();
 	}
 	
 	 public void start(){
@@ -82,6 +88,8 @@ public class lesson3controller implements Initializable {
 			 }else {
 			 	counter++;
 			 	start();
+			 	english();
+			 	hindi();
 			 }
 			 }
 			 public void last(ActionEvent event) {
@@ -102,6 +110,8 @@ public class lesson3controller implements Initializable {
 			 }else {
 			 	counter--;
 			 	start();
+			 	english();
+			 	hindi();
 			 	}
 			 }
 			 	@FXML
@@ -111,5 +121,55 @@ public class lesson3controller implements Initializable {
 			 	scene = new Scene(root);
 			 	stage.setScene(scene);
 			 	stage.show();
+			 	}
+			 	public void english() {
+			 		switch (counter) {
+			 		 case 1:
+			 			 info.setText("Position in Alphabet: 12th. \n Phonetic Pronunciation: /ɛl/");
+			 			 break;
+			 		 case 2:
+			 			 info.setText("Position in Alphabet: 13th. \t Phonetic Pronunciation: /ɛm/");
+			 			 break;
+			 		 case 3:
+			 			 info.setText("Position in Alphabet: 14th. \t Phonetic Pronunciation: /ɛn/ ");
+			 			 break;
+			 		 case 4:
+			 			 info.setText("Position in Alphabet: 15th. \t Phonetic Pronunciation: /oʊ/");
+			 			 break;
+			 		 case 5:
+			 			 info.setText("Position in Alphabet: 16th. \t Phonetic Pronunciation: /pi/");
+			 			 break;
+			 		case 6:
+			 			 info.setText("Position in Alphabet: 17th. \t Phonetic Pronunciation: /kju/");
+			 			 break;
+			 		case 7:
+			 			 info.setText("Position in Alphabet: 18th. \t Phonetic Pronunciation: /ɑr/");
+			 			 break;
+			 		 }
+			 	}
+			 	public void hindi() {
+			 		switch (counter) {
+			 		 case 1:
+			 			 info.setText("वर्णमाला में स्थान: बारहवाँ | \t ध्वनिक उच्चारण: /एल/");
+			 			 break;
+			 		 case 2:
+			 			 info.setText("वर्णमाला में स्थान: तेरहवाँ | \t ध्वनिक उच्चारण: /एम/");
+			 			 break;
+			 		 case 3:
+			 			 info.setText("वर्णमाला में स्थान: चौदहवाँ | \t ध्वनिक उच्चारण: /एन/");
+			 			 break;
+			 		 case 4:
+			 			 info.setText("वर्णमाला में स्थान: पंद्रहवाँ | \t ध्वनिक उच्चारण: /ओ/");
+			 			 break;
+			 		 case 5:
+			 			 info.setText("वर्णमाला में स्थान: सोलहवाँ | \t ध्वनिक उच्चारण: /पी/");
+			 			 break;
+			 		case 6:
+			 			 info.setText("वर्णमाला में स्थान: सत्रहवाँ | \t ध्वनिक उच्चारण: /क्यू/");
+			 			 break;
+			 		case 7:
+			 			 info.setText("वर्णमाला में स्थान: अठारहवाँ | \t ध्वनिक उच्चारण: /आर/");
+			 			 break;
+			 		 }
 			 	}
 }

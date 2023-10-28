@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -75,14 +76,18 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fx:id="apple" fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="example" fitHeight="167.0" fitWidth="261.0" layoutX="45.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../contents/apple.jpg" />
                      </image>
                   </ImageView>
-                  <TextField fx:id="info" alignment="BASELINE_LEFT" editable="false" layoutX="78.0" layoutY="211.0" prefHeight="63.0" prefWidth="264.0" />
-                  <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
-                  <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
+                  <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" onAction="#english" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
+                  <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" onAction="#hindi" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
+                  <Label fx:id="info" layoutX="81.0" layoutY="211.0" prefHeight="64.0" prefWidth="184.0" text="वर्णमाला में स्थान: पहलाध्वनिक उच्चारण: /ए/" wrapText="true">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
          </center>
