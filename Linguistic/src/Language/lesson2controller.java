@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -38,33 +39,47 @@ public class lesson2controller implements Initializable{
 	private Stage stage;
 	private Scene scene;
 	
+
+@FXML
+	Image image6 = new Image(getClass().getResourceAsStream("/contents/Fish.jpg"));
+	Image image7 = new Image(getClass().getResourceAsStream("/contents/Goat.jpg"));
+	Image image8 = new Image(getClass().getResourceAsStream("/contents/Hen.jpg"));
+	Image image9 = new Image(getClass().getResourceAsStream("/contents/IceCream.jpg"));
+	Image image10 = new Image(getClass().getResourceAsStream("/contents/Jug.jpg"));
+	Image image11 = new Image(getClass().getResourceAsStream("/contents/Kite.jpg"));
 	
 	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+	public void initialize(URL location, ResourceBundle resources) { 
 		start();
 		english();
 		hindi();
 	}
+	
 	 public void start(){
 		 switch (counter) {
 		 case 1:
 			 pronounce.setText("F - एफ (eff)");
+			 example.setImage(image6);
 			 break;
 		 case 2:
 			 pronounce.setText("G - जी (jee)");
+			 example.setImage(image7);
 			 break;
 		 case 3:
 			 pronounce.setText("H - एच (eich)");
+			 example.setImage(image8);
 			 break;
 		 case 4:
 			 pronounce.setText("I - आई (aai)");
+			 example.setImage(image9);
 			 break;
 		 case 5:
 			 pronounce.setText("J - जे (jay)");
+			 example.setImage(image10);
 			 break;
 		 case 6:
 			 pronounce.setText("K - के (kay)");
+			 example.setImage(image11);
 			 break;
 		 }
 	 }
@@ -120,7 +135,7 @@ public class lesson2controller implements Initializable{
 			scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
-			}
+	}
 			public void english() {
 				switch (counter) {
 				 case 1:
@@ -140,8 +155,10 @@ public class lesson2controller implements Initializable{
 					 break;
 				 case 6:
 				 	info.setText("Position in Alphabet: 11th. \t Phonetic Pronunciation: /keɪ/");
-				 }
+				 	break;
+				}
 			}
+			
 			public void hindi() {
 				switch (counter) {
 				 case 1:

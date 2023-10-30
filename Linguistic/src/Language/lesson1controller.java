@@ -1,7 +1,9 @@
 package Language;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
@@ -21,9 +23,20 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 public class lesson1controller implements Initializable{
 
+	private File directory;
+	private File[] files;
+	
+	private ArrayList<File> songs;
+	
+	private int songNumber;
+	
+	private Media media;
+	private MediaPlayer mediaPlayer;
+	
 	@FXML
 	public TextField pronounce;
 	
@@ -31,29 +44,39 @@ public class lesson1controller implements Initializable{
 	public Label info;
 	
 	@FXML
-	public ImageView audiocontrol,example;
+	public ImageView example;
 	
 	@FXML
-	public Button menu,last,next,english,hindi;
+	public Button menu,last,next,english,hindi,audio;
 	
 	static int counter = 1;
+	
 	private Stage stage;
 	private Scene scene;
 	
 	@FXML
-	Image image1 = new Image(getClass().getResourceAsStream("/contents/apple.jpg"));
-	/*Image image2 = new Image(getClass().getResourceAsStream("/contents/fish.jpg"));
-	Image image3 = new Image(getClass().getResourceAsStream("/contents/fish.jpg"));
-	Image image4 = new Image(getClass().getResourceAsStream("/contents/fish.jpg"));
-	Image image5 = new Image(getClass().getResourceAsStream("/contents/fish.jpg"));
-	*/
-
+	Image image1 = new Image(getClass().getResourceAsStream("/contents/Apple.jpg"));
+	Image image2 = new Image(getClass().getResourceAsStream("/contents/Ball.jpg"));
+	Image image3 = new Image(getClass().getResourceAsStream("/contents/Cat.jpg"));
+	Image image4 = new Image(getClass().getResourceAsStream("/contents/Dog.jpg"));
+	Image image5 = new Image(getClass().getResourceAsStream("/contents/Elephant.jpg"));
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-	start();
-	english();
-	hindi();
+		songs= new ArrayList<File>();
+		
+		directory= new File("audios");
+		
+		files = directory.listFiles();
+		
+		if (files != null) {
+			for (File file : files) {
+				
+				songs.add(file);
+			}
+			media = new Media(songs.get(songNumber).toURI().toString());
+			mediaPlayer= new MediaPlayer(media);
+		}
 	}
 	public void start(){
 	 switch (counter) {
@@ -63,18 +86,27 @@ public class lesson1controller implements Initializable{
 		 break;
 	 case 2:
 		 pronounce.setText("B - बी (bee)");
+		 example.setImage(image2);
 		 break;
 	 case 3:
 		 pronounce.setText("C - सी (cee)");
+		 example.setImage(image3);
 		 break;
 	 case 4:
 		 pronounce.setText("D - डी (dee)");
+		 example.setImage(image4);
 		 break;
 	 case 5:
 		 pronounce.setText("E - ई (ee)");
+		 example.setImage(image5);
 		 break;
 	 }
 }
+	public void playAudio() {
+		mediaPlayer.play();
+		mediaPlayer.seek(Duration.seconds(0));
+	}
+	
 public void next(ActionEvent event) {
 if (counter==5) {
 	try {
@@ -131,7 +163,6 @@ public void english() {
 	switch (counter) {
 	 case 1:
 		 info.setText("Position in Alphabet: 1st. \n Phonetic Pronunciation: /eɪ/");
-		 
 		 break;
 	 case 2:
 		 info.setText("Position in Alphabet: 2nd. \t Phonetic Pronunciation: /bi/");

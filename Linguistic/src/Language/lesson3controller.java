@@ -14,6 +14,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -33,6 +34,15 @@ public class lesson3controller implements Initializable {
 	@FXML
 	public Button menu,last,next,english,hindi;
 	
+	@FXML
+	Image image12 = new Image(getClass().getResourceAsStream("/contents/Lion.jpg"));
+	Image image13 = new Image(getClass().getResourceAsStream("/contents/Monkey.jpg"));
+	Image image14 = new Image(getClass().getResourceAsStream("/contents/Nest.jpg"));
+	Image image15 = new Image(getClass().getResourceAsStream("/contents/Orange.jpg"));
+	Image image16 = new Image(getClass().getResourceAsStream("/contents/Parrot.jpg"));
+	Image image17 = new Image(getClass().getResourceAsStream("/contents/Queen.jpg"));
+	Image image18 = new Image(getClass().getResourceAsStream("/contents/Rabbit.jpg"));
+	
 	static int counter = 0;
 	
 	private Stage stage;
@@ -49,24 +59,31 @@ public class lesson3controller implements Initializable {
 		 switch (counter) {
 		 case 1:
 			 pronounce.setText("L - एल (el)");
+			 example.setImage(image12);
 			 break;
 		 case 2:
 			 pronounce.setText("M - एम (em)");
+			 example.setImage(image13);
 			 break;
 		 case 3:
 			 pronounce.setText("N - एन (en)");
+			 example.setImage(image14);
 			 break;
 		 case 4:
 			 pronounce.setText("O - ओ (oh)");
+			 example.setImage(image15);
 			 break;
 		 case 5:
 			 pronounce.setText("P - पी (pee)");
+			 example.setImage(image16);
 			 break;
 		 case 6:
 			 pronounce.setText("Q - क्यू (kyoo)");
+			 example.setImage(image17);
 			 break;
 		 case 7:
 			 pronounce.setText("R - आर (aar)");
+			 example.setImage(image18);
 			 break;
 		 }
 	 }
@@ -122,6 +139,7 @@ public class lesson3controller implements Initializable {
 			 	stage.setScene(scene);
 			 	stage.show();
 			 	}
+			 	
 			 	public void english() {
 			 		switch (counter) {
 			 		 case 1:
@@ -147,6 +165,7 @@ public class lesson3controller implements Initializable {
 			 			 break;
 			 		 }
 			 	}
+			 	
 			 	public void hindi() {
 			 		switch (counter) {
 			 		 case 1:

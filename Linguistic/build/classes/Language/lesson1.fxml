@@ -26,14 +26,11 @@
                         <Font name="SansSerif Bold" size="12.0" />
                      </font>
                   </Button>
-                  <ImageView fx:id="audiocontrol" fitHeight="70.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                  <Button fx:id="audio" mnemonicParsing="false" onAction="#playAudio" prefHeight="70.0" prefWidth="90.0" text="play">
                      <HBox.margin>
-                        <Insets left="50.0" top="10.0" />
+                        <Insets left="10.0" top="10.0" />
                      </HBox.margin>
-                     <image>
-                        <Image url="@../icons/audio.png" />
-                     </image>
-                  </ImageView>
+                  </Button>
                   <TextField fx:id="pronounce" alignment="BASELINE_LEFT" editable="false" prefHeight="74.0" prefWidth="262.0" text=" A-ऐ">
                      <HBox.margin>
                         <Insets left="20.0" right="60.0" top="10.0" />
@@ -78,7 +75,7 @@
                <children>
                   <ImageView fx:id="example" fitHeight="167.0" fitWidth="261.0" layoutX="45.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../contents/apple.jpg" />
+                        <Image url="@../contents/Apple.jpg" />
                      </image>
                   </ImageView>
                   <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" onAction="#english" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />

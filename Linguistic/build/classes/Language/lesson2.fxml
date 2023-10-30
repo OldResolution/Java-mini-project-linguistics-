@@ -34,7 +34,7 @@
                         <Image url="@../icons/audio.png" />
                      </image>
                   </ImageView>
-                  <TextField fx:id="pronounce" alignment="BASELINE_LEFT" editable="false" prefHeight="74.0" prefWidth="268.0" text=" F-फ">
+                  <TextField fx:id="pronounce" alignment="BASELINE_LEFT" editable="false" prefHeight="74.0" prefWidth="268.0" text=" F-फ (eff)">
                      <HBox.margin>
                         <Insets left="35.0" right="50.0" top="10.0" />
                      </HBox.margin>
@@ -76,13 +76,13 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fx:id="apple" fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="example" fitHeight="150.0" fitWidth="200.0" layoutX="56.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../contents/fish.jpg" />
+                        <Image url="@../contents/Fish.jpg" />
                      </image>
                   </ImageView>
-                  <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
-                  <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
+                  <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" onAction="#english" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
+                  <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" onAction="#hindi" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
                   <Label fx:id="info" layoutX="92.0" layoutY="214.0" prefHeight="64.0" prefWidth="184.0" text="वर्णमाला में स्थान: छठा | \t ध्वनिक उच्चारण: /एफ/" wrapText="true">
                      <font>
                         <Font name="SansSerif Regular" size="14.0" />

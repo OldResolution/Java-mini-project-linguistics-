@@ -14,6 +14,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -33,6 +34,16 @@ public class lesson4controller implements Initializable{
 	@FXML
 	public Button menu,last,next,english,hindi;
 	
+	@FXML
+	Image image19 = new Image(getClass().getResourceAsStream("/contents/Ship.jpg"));
+	Image image20 = new Image(getClass().getResourceAsStream("/contents/Tiger.jpg"));
+	Image image21 = new Image(getClass().getResourceAsStream("/contents/Umbrella.jpg"));
+	Image image22 = new Image(getClass().getResourceAsStream("/contents/Van.jpg"));
+	Image image23 = new Image(getClass().getResourceAsStream("/contents/Watch.jpg"));
+	Image image24 = new Image(getClass().getResourceAsStream("/contents/Xylophone.jpg"));
+	Image image25 = new Image(getClass().getResourceAsStream("/contents/Yak.jpg"));
+	Image image26 = new Image(getClass().getResourceAsStream("/contents/Zebra.jpg"));
+
 	static int counter = 0;
 	
 	private Stage stage;
@@ -50,33 +61,41 @@ public class lesson4controller implements Initializable{
 		 switch (counter) {
 		 case 1:
 			 pronounce.setText("S - एस (es)");
+			 example.setImage(image19);
 			 break;
 		 case 2:
 			 pronounce.setText("T - टी (tee)");
+			 example.setImage(image20);
 			 break;
 		 case 3:
 			 pronounce.setText("U - यू (yoo))");
+			 example.setImage(image21);
 			 break;
 		 case 4:
 			 pronounce.setText("V - वी (vee)");
+			 example.setImage(image22);
 			 break;
 		 case 5:
 			 pronounce.setText("W - डब्ल्यू (double you)");
+			 example.setImage(image23);
 			 break;
 		 case 6:
 			 pronounce.setText("X - एक्स (eks)");
+			 example.setImage(image24);
 			 break;
 		 case 7:
 			 pronounce.setText("Y - वाई (wai)");
+			 example.setImage(image25);
 			 break;
 		 case 8:
 			 pronounce.setText("Z - जेड (zed)");
+			 example.setImage(image26);
 			 break;
 		 }
             
 	}
 	 public void next(ActionEvent event) {
-		 if (counter==5) {
+		 if (counter==8) {
 		 	try {
 		 		 Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
 		            thisstage.close();
@@ -125,6 +144,7 @@ public class lesson4controller implements Initializable{
 		 	stage.setScene(scene);
 		 	stage.show();
 		 	}
+		 	
 		 	public void english() {
 		 		switch (counter) {
 		 		 case 1:
@@ -153,6 +173,7 @@ public class lesson4controller implements Initializable{
 		 			 break;
 		 		 }
 		 	}
+		 	
 		 	public void hindi() {
 		 		switch (counter) {
 		 		 case 1:
