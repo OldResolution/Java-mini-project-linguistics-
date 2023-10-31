@@ -32,7 +32,7 @@ public class lesson1controller implements Initializable{
 	
 	private ArrayList<File> songs;
 	
-	private int songNumber;
+	private int AlfaNumber;
 	
 	private Media media;
 	private MediaPlayer mediaPlayer;
@@ -60,12 +60,33 @@ public class lesson1controller implements Initializable{
 	Image image3 = new Image(getClass().getResourceAsStream("/contents/Cat.jpg"));
 	Image image4 = new Image(getClass().getResourceAsStream("/contents/Dog.jpg"));
 	Image image5 = new Image(getClass().getResourceAsStream("/contents/Elephant.jpg"));
-	
+	Image image6 = new Image(getClass().getResourceAsStream("/contents/Fish.jpg"));
+	Image image7 = new Image(getClass().getResourceAsStream("/contents/Goat.jpg"));
+	Image image8 = new Image(getClass().getResourceAsStream("/contents/Hen.jpg"));
+	Image image9 = new Image(getClass().getResourceAsStream("/contents/IceCream.jpg"));
+	Image image10 = new Image(getClass().getResourceAsStream("/contents/Jug.jpg"));
+	Image image11 = new Image(getClass().getResourceAsStream("/contents/Kite.jpg"));
+	Image image12 = new Image(getClass().getResourceAsStream("/contents/Lion.jpg"));
+	Image image13 = new Image(getClass().getResourceAsStream("/contents/Monkey.jpg"));
+	Image image14 = new Image(getClass().getResourceAsStream("/contents/Nest.jpg"));
+	Image image15 = new Image(getClass().getResourceAsStream("/contents/Orange.jpg"));
+	Image image16 = new Image(getClass().getResourceAsStream("/contents/Parrot.jpg"));
+	Image image17 = new Image(getClass().getResourceAsStream("/contents/Queen.jpg"));
+	Image image18 = new Image(getClass().getResourceAsStream("/contents/Rabbit.jpg"));
+	Image image19 = new Image(getClass().getResourceAsStream("/contents/Ship.jpg"));
+	Image image20 = new Image(getClass().getResourceAsStream("/contents/Tiger.jpg"));
+	Image image21 = new Image(getClass().getResourceAsStream("/contents/Umbrella.jpg"));
+	Image image22 = new Image(getClass().getResourceAsStream("/contents/Van.jpg"));
+	Image image23 = new Image(getClass().getResourceAsStream("/contents/Watch.jpg"));
+	Image image24 = new Image(getClass().getResourceAsStream("/contents/Xylophone.jpg"));
+	Image image25 = new Image(getClass().getResourceAsStream("/contents/Yak.jpg"));
+	Image image26 = new Image(getClass().getResourceAsStream("/contents/Zebra.jpg"));
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		songs= new ArrayList<File>();
 		
-		directory= new File("audios");
+		directory= new File("audio");
 		
 		files = directory.listFiles();
 		
@@ -73,10 +94,15 @@ public class lesson1controller implements Initializable{
 			for (File file : files) {
 				
 				songs.add(file);
-			}
-			media = new Media(songs.get(songNumber).toURI().toString());
+				System.out.println(file);
+				}
+			media = new Media(songs.get(AlfaNumber).toURI().toString());
 			mediaPlayer= new MediaPlayer(media);
 		}
+	}
+	public void playAudio() {
+		mediaPlayer.play();
+		mediaPlayer.seek(Duration.seconds(0));
 	}
 	public void start(){
 	 switch (counter) {
@@ -100,15 +126,94 @@ public class lesson1controller implements Initializable{
 		 pronounce.setText("E - ई (ee)");
 		 example.setImage(image5);
 		 break;
+	 case 6:
+		 pronounce.setText("F - एफ (eff)");
+		 example.setImage(image6);
+		 break;
+	 case 7:
+		 pronounce.setText("G - जी (jee)");
+		 example.setImage(image7);
+		 break;
+	 case 8:
+		 pronounce.setText("H - एच (eich)");
+		 example.setImage(image8);
+		 break;
+	 case 9:
+		 pronounce.setText("I - आई (aai)");
+		 example.setImage(image9);
+		 break;
+	 case 10:
+		 pronounce.setText("J - जे (jay)");
+		 example.setImage(image10);
+		 break;
+	 case 11:
+		 pronounce.setText("K - के (kay)");
+		 example.setImage(image11);
+		 break;
+	 case 12:
+		 pronounce.setText("L - एल (el)");
+		 example.setImage(image12);
+		 break;
+	 case 13:
+		 pronounce.setText("M - एम (em)");
+		 example.setImage(image13);
+		 break;
+	 case 14:
+		 pronounce.setText("N - एन (en)");
+		 example.setImage(image14);
+		 break;
+	 case 15:
+		 pronounce.setText("O - ओ (oh)");
+		 example.setImage(image15);
+		 break;
+	 case 16:
+		 pronounce.setText("P - पी (pee)");
+		 example.setImage(image16);
+		 break;
+	 case 17:
+		 pronounce.setText("Q - क्यू (kyoo)");
+		 example.setImage(image17);
+		 break;
+	 case 18:
+		 pronounce.setText("R - आर (aar)");
+		 example.setImage(image18);
+		 break;
+	 case 19:
+		 pronounce.setText("S - एस (es)");
+		 example.setImage(image19);
+		 break;
+	 case 20:
+		 pronounce.setText("T - टी (tee)");
+		 example.setImage(image20);
+		 break;
+	 case 21:
+		 pronounce.setText("U - यू (yoo))");
+		 example.setImage(image21);
+		 break;
+	 case 22:
+		 pronounce.setText("V - वी (vee)");
+		 example.setImage(image22);
+		 break;
+	 case 23:
+		 pronounce.setText("W - डब्ल्यू (double you)");
+		 example.setImage(image23);
+		 break;
+	 case 24:
+		 pronounce.setText("X - एक्स (eks)");
+		 example.setImage(image24);
+		 break;
+	 case 25:
+		 pronounce.setText("Y - वाई (wai)");
+		 example.setImage(image25);
+		 break;
+	 case 26:
+		 pronounce.setText("Z - जेड (zed)");
+		 example.setImage(image26);
+		 break;
 	 }
 }
-	public void playAudio() {
-		mediaPlayer.play();
-		mediaPlayer.seek(Duration.seconds(0));
-	}
-	
 public void next(ActionEvent event) {
-if (counter==5) {
+if (counter==26) {
 	try {
 		 Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
            thisstage.close();
@@ -124,6 +229,22 @@ if (counter==5) {
 	}
 }else {
 	counter++;
+	if (AlfaNumber < songs.size()+1) {
+		
+		AlfaNumber++;
+		
+		mediaPlayer.stop();
+		media = new Media(songs.get(AlfaNumber).toURI().toString());
+		mediaPlayer= new MediaPlayer(media);
+		}
+	else{
+			
+			AlfaNumber=0;
+			
+			mediaPlayer.stop();
+			media = new Media(songs.get(AlfaNumber).toURI().toString());
+			mediaPlayer= new MediaPlayer(media);
+	}
 	start();
 	english();
 	hindi();
@@ -143,9 +264,24 @@ if (counter==1) {
            quizstage.show();
 		}catch(IOException e) {
            e.printStackTrace();
-	}
-}else {
+		}
+	}else {
 	counter--;
+	if (AlfaNumber > 0) {
+		
+		AlfaNumber--;
+		
+		mediaPlayer.stop();
+		media = new Media(songs.get(AlfaNumber).toURI().toString());
+		mediaPlayer= new MediaPlayer(media);
+		}
+	else{
+			AlfaNumber=songs.size()-1;
+			
+			mediaPlayer.stop();
+			media = new Media(songs.get(AlfaNumber).toURI().toString());
+			mediaPlayer= new MediaPlayer(media);
+	}
 	start();
 	english();
 	hindi();
@@ -176,6 +312,69 @@ public void english() {
 	 case 5:
 		 info.setText("Position in Alphabet: 5th. \t Phonetic Pronunciation: /i/");
 		 break;
+	 case 6:
+		 info.setText("Position in Alphabet: 6th. \n Phonetic Pronunciation: /ɛf/");
+		 break;
+	 case 7:
+		 info.setText("Position in Alphabet: 7th. \t Phonetic Pronunciation: /dʒi");
+		 break;
+	 case 8:
+		 info.setText("Position in Alphabet: 8th. \t Phonetic Pronunciation: /eɪʧ/ ");
+		 break;
+	 case 9:
+		 info.setText("Position in Alphabet: 9th. \t Phonetic Pronunciation: /aɪ/ ");
+		 break;
+	 case 10:
+		 info.setText("Position in Alphabet: 10th. \t Phonetic Pronunciation: /dʒeɪ/");
+		 break;
+	 case 11:
+	 	info.setText("Position in Alphabet: 11th. \t Phonetic Pronunciation: /keɪ/");
+	 	break;
+	 case 12:
+		 info.setText("Position in Alphabet: 12th. \n Phonetic Pronunciation: /ɛl/");
+		 break;
+	 case 13:
+		 info.setText("Position in Alphabet: 13th. \t Phonetic Pronunciation: /ɛm/");
+		 break;
+	 case 14:
+		 info.setText("Position in Alphabet: 14th. \t Phonetic Pronunciation: /ɛn/ ");
+		 break;
+	 case 15:
+		 info.setText("Position in Alphabet: 15th. \t Phonetic Pronunciation: /oʊ/");
+		 break;
+	 case 16:
+		 info.setText("Position in Alphabet: 16th. \t Phonetic Pronunciation: /pi/");
+		 break;
+	 case 17:
+		 info.setText("Position in Alphabet: 17th. \t Phonetic Pronunciation: /kju/");
+		 break;
+	 case 18:
+		 info.setText("Position in Alphabet: 18th. \t Phonetic Pronunciation: /ɑr/");
+		 break;
+	 case 19:
+		 info.setText("Position in Alphabet: 19th. \n Phonetic Pronunciation: /ɛs/");
+		 break;
+	 case 20:
+		 info.setText("Position in Alphabet: 20th. \t Phonetic Pronunciation: /ti/");
+		 break;
+	 case 21:
+		 info.setText("Position in Alphabet: 21st. \t Phonetic Pronunciation: /ju/ ");
+		 break;
+	 case 22:
+		 info.setText("Position in Alphabet: 22nd. \t Phonetic Pronunciation: /vi/");
+		 break;
+	 case 23:
+		 info.setText("Position in Alphabet: 23rd. \t Phonetic Pronunciation: /dʌblju/");
+		 break;
+	case 24:
+		 info.setText("Position in Alphabet: 24th. \t Phonetic Pronunciation: /ɛks/");
+		 break;
+	case 25:
+		 info.setText("Position in Alphabet: 25th. \t Phonetic Pronunciation: /waɪ/");
+		 break;
+	case 26:
+		 info.setText("Position in Alphabet: 26th. \t Phonetic Pronunciation: /zɛd/");
+		 break;
 	 }
 }
 public void hindi() {
@@ -195,6 +394,69 @@ public void hindi() {
 	 case 5:
 		 info.setText("वर्णमाला में स्थान: पाँचवा | \t ध्वनिक उच्चारण: /ई/");
 		 break;
+	 case 6:
+		 info.setText("वर्णमाला में स्थान: छठा | \t ध्वनिक उच्चारण: /एफ/");
+		 break;
+	 case 7:
+		 info.setText("वर्णमाला में स्थान: सातवाँ | \t ध्वनिक उच्चारण: /जी/");
+		 break;
+	 case 8:
+		 info.setText("वर्णमाला में स्थान: आठवाँ | \t ध्वनिक उच्चारण: /एच/");
+		 break;
+	 case 9:
+		 info.setText("वर्णमाला में स्थान: नौवाँ | \t ध्वनिक उच्चारण: /आई/");
+		 break;
+	 case 10:
+		 info.setText("वर्णमाला में स्थान: दसवाँ | \t ध्वनिक उच्चारण: /जे/");
+		 break;
+	 case 11:
+		 info.setText("वर्णमाला में स्थान: ग्यारहवाँ | \t ध्वनिक उच्चारण: /के/");
+		 break;
+	 case 12:
+		 info.setText("वर्णमाला में स्थान: बारहवाँ | \t ध्वनिक उच्चारण: /एल/");
+ 		 break;
+ 	 case 13:
+ 		 info.setText("वर्णमाला में स्थान: तेरहवाँ | \t ध्वनिक उच्चारण: /एम/");
+ 		 break;
+ 	 case 14:
+ 		 info.setText("वर्णमाला में स्थान: चौदहवाँ | \t ध्वनिक उच्चारण: /एन/");
+ 		 break;
+ 	 case 15:
+ 		 info.setText("वर्णमाला में स्थान: पंद्रहवाँ | \t ध्वनिक उच्चारण: /ओ/");
+ 		 break;
+ 	 case 16:
+ 		 info.setText("वर्णमाला में स्थान: सोलहवाँ | \t ध्वनिक उच्चारण: /पी/");
+ 		 break;
+ 	case 17:
+ 		info.setText("वर्णमाला में स्थान: सत्रहवाँ | \t ध्वनिक उच्चारण: /क्यू/");
+ 		break;
+ 	case 18:
+ 		info.setText("वर्णमाला में स्थान: अठारहवाँ | \t ध्वनिक उच्चारण: /आर/");
+ 		break;
+ 	 case 19:
+		 info.setText("वर्णमाला में स्थान: उन्नीसवाँ | \t ध्वनिक उच्चारण: /एस/");
+		 break;
+	 case 20:
+		 info.setText("वर्णमाला में स्थान: बीसवा | \t ध्वनिक उच्चारण: /टी/");
+		 break;
+	 case 21:
+		 info.setText("वर्णमाला में स्थान: इक्कीसवा | \t ध्वनिक उच्चारण: /यू/");
+		 break;
+	 case 22:
+		 info.setText("वर्णमाला में स्थान: बाईसवा | \t ध्वनिक उच्चारण: /वी/");
+		 break;
+	 case 23:
+		 info.setText("वर्णमाला में स्थान: तेइसवा | \t ध्वनिक उच्चारण: /डब्ल्यू/");
+		 break;
+	case 24:
+		 info.setText("वर्णमाला में स्थान: चौबीसवा | \t ध्वनिक उच्चारण: /एक्स/");
+		 break;
+	case 25:
+		 info.setText("वर्णमाला में स्थान: पच्चीसवा | \t ध्वनिक उच्चारण: /वाई/");
+		 break;
+	case 26:
+		 info.setText("वर्णमाला में स्थान: छब्बीसवा | \t ध्वनिक उच्चारण: /ज़ेड/");
+		 break;
 	 }
-}
+	}
 }

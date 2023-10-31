@@ -100,22 +100,22 @@
    <center>
       <AnchorPane prefHeight="211.0" prefWidth="202.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="lesson1" layoutX="55.0" layoutY="101.0" mnemonicParsing="false" onAction="#Lesson_1_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 1">
+            <Button fx:id="lesson1" layoutX="55.0" layoutY="101.0" mnemonicParsing="false" onAction="#Lesson_1_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 1" AnchorPane.leftAnchor="55.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson2" layoutX="331.0" layoutY="101.0" mnemonicParsing="false" onAction="#Lesson_2_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 2">
+            <Button fx:id="lesson2" layoutX="331.0" layoutY="101.0" mnemonicParsing="false" onAction="#Lesson_2_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 2" AnchorPane.leftAnchor="331.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson3" layoutX="55.0" layoutY="232.0" mnemonicParsing="false" onAction="#Lesson_3_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 3">
+            <Button fx:id="lesson3" layoutX="55.0" layoutY="232.0" mnemonicParsing="false" onAction="#Lesson_3_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 3" AnchorPane.leftAnchor="55.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson4" layoutX="331.0" layoutY="232.0" mnemonicParsing="false" onAction="#Lesson_4_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 4">
+            <Button fx:id="lesson4" layoutX="331.0" layoutY="232.0" mnemonicParsing="false" onAction="#Lesson_4_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 4" AnchorPane.leftAnchor="331.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
