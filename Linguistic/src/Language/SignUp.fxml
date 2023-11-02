@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane stylesheets="@signin_login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.SignUpController">
+<AnchorPane prefHeight="410.0" prefWidth="584.0" stylesheets="@signin_login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.SignUpController">
          <children>
             <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="520.0">
                <children>
@@ -30,19 +30,19 @@
                      </font>
                   </Button>
                   <Label fx:id="loginmessagelabel" alignment="CENTER" layoutX="15.0" layoutY="68.0" prefHeight="18.0" prefWidth="270.0" />
-                  <AnchorPane fx:id="langpane" layoutX="286.0" layoutY="-7.0" prefHeight="418.0" prefWidth="238.0">
+                  <AnchorPane fx:id="langpane" layoutX="286.0" layoutY="-7.0" prefHeight="418.0" prefWidth="296.0">
                      <children>
-                        <Label alignment="BOTTOM_CENTER" layoutX="6.0" layoutY="137.0" prefHeight="17.0" prefWidth="216.0" text="Linguistic" textFill="#f8f1f1">
+                        <Label alignment="BOTTOM_CENTER" layoutX="32.0" layoutY="138.0" prefHeight="17.0" prefWidth="216.0" text="Linguistic" textFill="#f8f1f1">
                            <font>
                               <Font name="Verdana Bold Italic" size="24.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="2.0" layoutY="160.0" prefHeight="97.0" prefWidth="223.0" text="Language Learning App" textAlignment="CENTER" textFill="#fcf9f9" wrapText="true">
+                        <Label alignment="CENTER" layoutX="26.0" layoutY="161.0" prefHeight="97.0" prefWidth="261.0" text="Language Learning App" textAlignment="CENTER" textFill="#fcf9f9" wrapText="true">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Line endX="89.0" layoutX="101.0" layoutY="176.0" startX="-75.0" />
+                        <Line endX="186.0" layoutX="101.0" layoutY="176.0" startX="-75.0" />
                      </children>
                   </AnchorPane>
             <TextField layoutX="34.0" layoutY="98.0" prefHeight="26.0" prefWidth="231.0" promptText="First name" />
@@ -54,7 +54,7 @@
                         <Font name="SansSerif Bold" size="12.0" />
                      </font>
                   </Label>
-            <Button fx:id="sign_in" layoutX="111.0" layoutY="356.0" mnemonicParsing="false" text="Sign In" textFill="#1a00ff">
+            <Button fx:id="sign_in" layoutX="111.0" layoutY="356.0" mnemonicParsing="false" onAction="#OpenLoginPage" text="Sign In" textFill="#1a00ff">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

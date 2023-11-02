@@ -53,32 +53,32 @@ public class lesson2controller implements Initializable{
 	
 
 	@FXML
-	Image image1 = new Image(getClass().getResourceAsStream("/contents/Apple.jpg"));
-	Image image2 = new Image(getClass().getResourceAsStream("/contents/Ball.jpg"));
-	Image image3 = new Image(getClass().getResourceAsStream("/contents/Cat.jpg"));
-	Image image4 = new Image(getClass().getResourceAsStream("/contents/Dog.jpg"));
-	Image image5 = new Image(getClass().getResourceAsStream("/contents/Elephant.jpg"));
-	Image image6 = new Image(getClass().getResourceAsStream("/contents/Fish.jpg"));
-	Image image7 = new Image(getClass().getResourceAsStream("/contents/Goat.jpg"));
-	Image image8 = new Image(getClass().getResourceAsStream("/contents/Hen.jpg"));
-	Image image9 = new Image(getClass().getResourceAsStream("/contents/IceCream.jpg"));
-	Image image10 = new Image(getClass().getResourceAsStream("/contents/Jug.jpg"));
-	Image image11 = new Image(getClass().getResourceAsStream("/contents/Kite.jpg"));
-	Image image12 = new Image(getClass().getResourceAsStream("/contents/Lion.jpg"));
-	Image image13 = new Image(getClass().getResourceAsStream("/contents/Monkey.jpg"));
-	Image image14 = new Image(getClass().getResourceAsStream("/contents/Nest.jpg"));
-	Image image15 = new Image(getClass().getResourceAsStream("/contents/Orange.jpg"));
-	Image image16 = new Image(getClass().getResourceAsStream("/contents/Parrot.jpg"));
-	Image image17 = new Image(getClass().getResourceAsStream("/contents/Queen.jpg"));
-	Image image18 = new Image(getClass().getResourceAsStream("/contents/Rabbit.jpg"));
-	Image image19 = new Image(getClass().getResourceAsStream("/contents/Ship.jpg"));
-	Image image20 = new Image(getClass().getResourceAsStream("/contents/Tiger.jpg"));
+	Image image1 = new Image(getClass().getResourceAsStream("/numbers/one.jpg"));
+	Image image2 = new Image(getClass().getResourceAsStream("/numbers/2.jpg"));
+	Image image3 = new Image(getClass().getResourceAsStream("/numbers/3.jpg"));
+	Image image4 = new Image(getClass().getResourceAsStream("/numbers/4.jpg"));
+	Image image5 = new Image(getClass().getResourceAsStream("/numbers/5.jpg"));
+	Image image6 = new Image(getClass().getResourceAsStream("/numbers/6.jpg"));
+	Image image7 = new Image(getClass().getResourceAsStream("/numbers/7.jpg"));
+	Image image8 = new Image(getClass().getResourceAsStream("/numbers/8.jpg"));
+	Image image9 = new Image(getClass().getResourceAsStream("/numbers/9.jpg"));
+	Image image10 = new Image(getClass().getResourceAsStream("/numbers/10.jpg"));
+	Image image11 = new Image(getClass().getResourceAsStream("/numbers/11.jpg"));
+	Image image12 = new Image(getClass().getResourceAsStream("/numbers/12.jpg"));
+	Image image13 = new Image(getClass().getResourceAsStream("/numbers/13.jpg"));
+	Image image14 = new Image(getClass().getResourceAsStream("/numbers/14.jpg"));
+	Image image15 = new Image(getClass().getResourceAsStream("/numbers/15.jpg"));
+	Image image16 = new Image(getClass().getResourceAsStream("/numbers/16.jpg"));
+	//Image image17 = new Image(getClass().getResourceAsStream("/numbers/17.jpg"));
+	Image image18 = new Image(getClass().getResourceAsStream("/numbers/18.jpg"));
+	Image image19 = new Image(getClass().getResourceAsStream("/numbers/19.jpg"));
+	Image image20 = new Image(getClass().getResourceAsStream("/numbers/20.jpg"));
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) { 
 		songs= new ArrayList<File>();
 		
-		directory= new File("numbers");
+		directory= new File("number");
 		
 		files = directory.listFiles();
 		
@@ -99,89 +99,85 @@ public class lesson2controller implements Initializable{
 	 public void start(){
 		 switch (counter) {
 		 case 1:
-			 pronounce.setText("1 - १) - One");
-			 example.setImage(image1);
-			 break;
-		 case 2:
 			 pronounce.setText("2 - २) - Two");
 			 example.setImage(image2);
 			 break;
-		 case 3:
+		 case 2:
 			 pronounce.setText("3 - ३) - Three");
 			 example.setImage(image3);
 			 break;
-		 case 4:
+		 case 3:
 			 pronounce.setText("4 - ४) - Four");
 			 example.setImage(image4);
 			 break;
-		 case 5:
+		 case 4:
 			 pronounce.setText("5 - ५) - Five");
 			 example.setImage(image5);
 			 break;
-		 case 6:
+		 case 5:
 			 pronounce.setText("6 - ६) - Six");
 			 example.setImage(image6);
 			 break;
-		 case 7:
+		 case 6:
 			 pronounce.setText("7 - ७) - Seven");
 			 example.setImage(image7);
 			 break;
-		 case 8:
+		 case 7:
 			 pronounce.setText("8 - ८) - Eight");
 			 example.setImage(image8);
 			 break;
-		 case 9:
+		 case 8:
 			 pronounce.setText("9 - ९) - Nine");
 			 example.setImage(image9);
 			 break;
-		 case 10:
+		 case 9:
 			 pronounce.setText("10 - १०) - Ten");
 			 example.setImage(image10);
 			 break;
-		 case 11:
+		 case 10:
 			 pronounce.setText("11 - ११) - Eleven");
 			 example.setImage(image11);
 			 break;
-		 case 12:
+		 case 11:
 			 pronounce.setText("12 - १२) - Twelve");
 			 example.setImage(image12);
 			 break;
-		 case 13:
+		 case 12:
 			 pronounce.setText("13 - १३) - Thirteen");
 			 example.setImage(image13);
 			 break;
-		 case 14:
+		 case 13:
 			 pronounce.setText("14 - १४) - Fourteen");
 			 example.setImage(image14);
 			 break;
-		 case 15:
+		 case 14:
 			 pronounce.setText("15 - १५) - Fifteen");
 			 example.setImage(image15);
 			 break;
-		 case 16:
+		 case 15:
 			 pronounce.setText("16 - १६) - Sixteen");
 			 example.setImage(image16);
 			 break;
-		 case 17:
+		 case 16:
 			 pronounce.setText("17 - १७) - Seventeen");
-			 example.setImage(image17);
+			 //example.setImage(image17);
 			 break;
-		 case 18:
+		 case 17:
 			 pronounce.setText("18 - १८) - Eighteen");
 			 example.setImage(image18);
 			 break;
-		 case 19:
+		 case 18:
 			 pronounce.setText("19 - १९) - Nineteen");
 			 example.setImage(image19);
 			 break;
-		 case 20:
+		 case 19:
 			 pronounce.setText("20 - २०) - Twenty");
 			 example.setImage(image20);
 		 }
 	 }
 	 
 	 public void next(ActionEvent event) {
-		if (counter==6) {
+		if (counter==19) {
 			try {
 				 Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
 		           thisstage.close();
@@ -217,7 +213,7 @@ public class lesson2controller implements Initializable{
 			}
 		}
 		public void last(ActionEvent event) {
-		if (counter==1) {
+		if (counter==0	) {
 			try {
 				 Stage thisstage = (Stage) ((Button) event.getSource()).getScene().getWindow();
 		           thisstage.close();

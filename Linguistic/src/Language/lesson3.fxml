@@ -8,47 +8,24 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.lesson3controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@lessons.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.lesson1controller">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="600.0">
-         <top>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191970; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+         <left>
+            <VBox fx:id="vbox1" prefHeight="336.0" prefWidth="122.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="goback" mnemonicParsing="false" onAction="#getback" prefHeight="48.0" prefWidth="60.0" style="-fx-background-color: #ff0000;" text="GO BACK" textAlignment="CENTER" wrapText="true">
+                  <Button fx:id="goback" mnemonicParsing="false" onAction="#getback" prefHeight="70.0" prefWidth="90.0" text="GO BACK" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font name="SansSerif Bold" size="12.0" />
                      </font>
-                     <HBox.margin>
-                        <Insets left="5.0" top="30.0" />
-                     </HBox.margin>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
                   </Button>
-                  <ImageView fx:id="audiocontrol" fitHeight="70.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="50.0" top="10.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@../icons/audio.png" />
-                     </image>
-                  </ImageView>
-                  <TextField fx:id="pronounce" alignment="BASELINE_LEFT" editable="false" prefHeight="74.0" prefWidth="292.0" text=" L-ल (el)">
-                     <HBox.margin>
-                        <Insets left="35.0" right="50.0" top="10.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font size="34.0" />
-                     </font>
-                  </TextField>
-               </children>
-            </HBox>
-         </top>
-         <left>
-            <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-radius: 1px; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
-               <children>
-                  <Button fx:id="last" mnemonicParsing="false" onAction="#last" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3;" text="Previous" textFill="WHITE">
+                  <Button fx:id="last" mnemonicParsing="false" onAction="#last" prefHeight="62.0" prefWidth="131.0" text="Previous" textFill="WHITE">
                      <VBox.margin>
                         <Insets top="90.0" />
                      </VBox.margin>
@@ -60,9 +37,21 @@
             </VBox>
          </left>
          <right>
-            <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
+            <VBox fx:id="vbox2" prefHeight="336.0" prefWidth="122.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3; -fx-border-radius: 25px;" text="Next" textFill="WHITE">
+                  <Button fx:id="photo" mnemonicParsing="false" onAction="#playAudio" prefHeight="77.0" prefWidth="102.0">
+                     <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/audio.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="62.0" prefWidth="131.0" text="Next" textFill="WHITE">
                      <VBox.margin>
                         <Insets top="90.0" />
                      </VBox.margin>
@@ -76,18 +65,23 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fx:id="example" fitHeight="150.0" fitWidth="200.0" layoutX="68.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="example" fitHeight="167.0" fitWidth="261.0" layoutX="66.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../contents/Lion.jpg" />
+                        <Image url="@../contents/Apple.jpg" />
                      </image>
                   </ImageView>
-                  <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" onAction="#english" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
-                  <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" onAction="#hindi" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
-                  <Label fx:id="info" layoutX="86.0" layoutY="211.0" prefHeight="64.0" prefWidth="184.0" text="वर्णमाला में स्थान: | ध्वनिक उच्चारण: /एल/" wrapText="true">
+                  <Button fx:id="english" layoutX="12.0" layoutY="321.0" mnemonicParsing="false" onAction="#english" text="English" textFill="WHITE" />
+                  <Button fx:id="hindi" layoutX="11.0" layoutY="359.0" mnemonicParsing="false" onAction="#hindi" prefHeight="26.0" prefWidth="55.0" stylesheets="@lessons.css" text="Hindi" textFill="WHITE" />
+                  <Label fx:id="info" layoutX="78.0" layoutY="280.0" prefHeight="108.0" prefWidth="249.0" text="वर्णमाला में स्थान: पहलाध्वनिक उच्चारण: /ए/" wrapText="true">
                      <font>
                         <Font name="SansSerif Regular" size="14.0" />
                      </font>
                   </Label>
+                  <TextField fx:id="pronounce" alignment="CENTER" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="74.0" prefWidth="346.0" text=" A-ऐ (eh)">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </TextField>
                </children>
             </AnchorPane>
          </center>

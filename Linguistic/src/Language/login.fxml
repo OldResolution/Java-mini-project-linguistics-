@@ -32,7 +32,7 @@
             </AnchorPane>
          </left>
          <center>
-            <AnchorPane prefHeight="400.0" prefWidth="298.0" stylesheets="@decorate.css" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="400.0" prefWidth="298.0" BorderPane.alignment="CENTER">
                <children>
                   <Label fx:id="msg" alignment="CENTER" layoutX="51.0" layoutY="44.0" prefHeight="27.0" prefWidth="179.0" text="User Login">
                      <font>
@@ -55,7 +55,7 @@
                   </Label>
                   <Button fx:id="cancelButton" layoutX="23.0" layoutY="281.0" mnemonicParsing="false" onAction="#CancelAction" prefHeight="30.0" prefWidth="236.0" text="Cancel" textFill="WHITE" />
                   <Label fx:id="loginmessagelabel" alignment="CENTER" layoutX="12.0" layoutY="80.0" prefHeight="18.0" prefWidth="270.0" />
-                  <Button fx:id="SignupPageButton" layoutX="105.0" layoutY="348.0" mnemonicParsing="false" onAction="#OpenSignupAction" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign up!!" textFill="#0f0161">
+                  <Button fx:id="sign_in" layoutX="105.0" layoutY="348.0" mnemonicParsing="false" onAction="#OpenSignupAction" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign up!!" textFill="#0f0161">
                      <font>
                         <Font name="Comic Sans MS Bold" size="12.0" />
                      </font></Button>

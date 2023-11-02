@@ -2,6 +2,7 @@
 package Language;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -42,14 +43,22 @@ public class DashboardController implements Initializable {
     
     private Stage stage;
     private Scene scene;
-
+    int progress1,progress3;
+    double progress2;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      
     }    
+    public void increaseprogress() {
+    	progress1=resultcontroller.progress;
+    	progress2=LessonController.progress;
+    	progress3=resultcontroller.progress;
+    	QuizzesPB.setProgress(progress3);
+    	CoursePB.setProgress(progress1);
+    	LessonsPB.setProgress(progress2);
+    }
     @FXML
     void OpenCourses(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("course.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("courses.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
@@ -63,6 +72,7 @@ public class DashboardController implements Initializable {
                 scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
+                
     }
     @FXML
     void OpenReport(ActionEvent event) throws IOException {
@@ -82,10 +92,10 @@ public class DashboardController implements Initializable {
     }
     @FXML
     void OpenQuiz(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("QuizPage.fxml"));
+    	Parent root = FXMLLoader.load(getClass().getResource("QuizPage.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
-                stage.show();
+                stage.show();       
     }
 }

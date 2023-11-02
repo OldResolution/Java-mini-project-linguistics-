@@ -15,7 +15,7 @@
    <left>
       <VBox fx:id="vbox" prefHeight="474.0" prefWidth="198.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="dashboard" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="80.0" prefWidth="206.0" text="Profile" textFill="#faf4f4">
+            <Button fx:id="dashboard" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#increaseprogress" prefHeight="80.0" prefWidth="206.0" text="Profile" textFill="#faf4f4">
                <font>
                   <Font name="SansSerif Bold" size="16.0" />
                </font>
@@ -89,24 +89,24 @@
                   <Font name="SansSerif Bold Italic" size="35.0" />
                </font>
             </Label>
-            <ProgressBar fx:id="CoursePB" layoutX="14.0" layoutY="246.0" prefHeight="26.0" prefWidth="272.0" progress="0.0" />
+            <ProgressBar fx:id="CoursePB" layoutX="14.0" layoutY="246.0" prefHeight="26.0" prefWidth="272.0" progress="0" />
             <Label fx:id="courselabel" layoutX="14.0" layoutY="201.0" prefHeight="35.0" prefWidth="292.0" text="Courses Completed">
                <font>
                   <Font name="SansSerif Bold" size="21.0" />
                </font>
             </Label>
-            <ProgressBar fx:id="LessonsPB" layoutX="14.0" layoutY="330.0" prefHeight="26.0" prefWidth="272.0" progress="0.0" />
+            <ProgressBar fx:id="LessonsPB" layoutX="14.0" layoutY="330.0" prefHeight="26.0" prefWidth="272.0" progress="0" />
             <Label fx:id="lessonlabel" layoutX="14.0" layoutY="293.0" text="Lessons Completed">
                <font>
                   <Font name="SansSerif Bold" size="21.0" />
                </font>
             </Label>
-          <Button fx:id="LogoutButton" layoutX="391.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="37.0" prefWidth="98.0" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Sign Out">
+          <Button fx:id="LogoutButton" layoutX="378.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="44.0" prefWidth="110.0" text="Sign Out">
                <font>
                   <Font name="SansSerif Bold Italic" size="16.0" />
                </font>
             </Button>
-            <ProgressBar layoutX="14.0" layoutY="425.0" prefHeight="26.0" prefWidth="272.0" progress="0.0" />
+            <ProgressBar fx:id="QuizzesPB" layoutX="14.0" layoutY="425.0" prefHeight="26.0" prefWidth="272.0" progress="0" />
             <Label fx:id="quizlabel" layoutX="14.0" layoutY="389.0" text="Quiz Completed">
                <font>
                   <Font name="SansSerif Bold" size="21.0" />

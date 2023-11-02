@@ -24,7 +24,7 @@ public class Controller {
     private Scene scene;
 
     @FXML
-    private TextField UserField;
+    public TextField UserField;
     @FXML
     private PasswordField PassField;
     

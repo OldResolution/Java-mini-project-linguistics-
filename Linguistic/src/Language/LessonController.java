@@ -17,6 +17,8 @@ public class LessonController implements Initializable {
     private Stage stage;
     private Scene scene;
     
+    static double progress;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -28,6 +30,7 @@ public class LessonController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        progress += 0.34;
     }
 
     @FXML
@@ -37,6 +40,7 @@ public class LessonController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        progress += 0.34;
     }
 
     @FXML
@@ -46,6 +50,7 @@ public class LessonController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        progress += 0.34;
     }
 
     @FXML
@@ -82,7 +87,7 @@ public class LessonController implements Initializable {
     }
 	@FXML
 	void OpenCourse(ActionEvent event) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("course.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("courses.fxml"));
 			stage= (Stage) ((Node) event.getSource()).getScene().getWindow();
 			scene = new Scene (root);
 			stage.setScene(scene);

@@ -1,0 +1,53 @@
+#vbox1{
+	 -fx-background-color: linear-gradient(to bottom right,#4d6eab ,#000000 );
+}
+#vbox2{
+	 -fx-background-color: linear-gradient(to bottom right,#4d6eab ,#000000 );
+}
+.button {
+    -fx-font-family: 'Verdana Bold Italic';
+    -fx-font-size: 13.0;
+    -fx-background-color:transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 2, 2);
+    -fx-text-fill: white; 
+}
+#example{
+	-fx-blend-mode: overlay  ;
+	}
+/* Add hover effects for buttons */
+.button:hover {
+    -fx-background-color: #263f73;
+}
+.button:pressed{
+	-fx-background-color: linear-gradient(to right, #263f73, #4d6eab);
+}
+.root{
+	-fx-background-color: linear-gradient(to top right , #000000, #ffffff);
+}
+#goback{
+	-fx-background-color:linear-gradient(to right ,red,crimson);
+}
+#goback:hover{
+		-fx-background-color:linear-gradient(to right ,crimson,red);
+}
+#goback:pressed{
+		-fx-background-color:crimson;	
+}
+#pronounce{
+	-fx-font-family: 'Verdana Bold Italic';
+    -fx-font-size: 30.0;
+    -fx-background-color:transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 2, 2);
+    -fx-text-fill: black;
+}
+#photo{
+	-fx-background-color: linear-gradient(to bottom right , #FFFFFF, #FFFFEF)
+}
+#photo:hover{
+	-fx-background-color:linear-gradient(to top right, #000000, #ffffff);
+}
+#photo:pressed{
+	-fx-background-color:linear-gradient(to top right, #4d6eab ,#000000);
+
+}

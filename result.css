@@ -1,0 +1,45 @@
+/* #vbox{
+	 -fx-background-color: linear-gradient(to bottom right,#4d6eab ,#000000 );
+}*/
+.button {
+    -fx-font-family: 'Verdana Bold Italic';
+    -fx-font-size: 16.0;
+    -fx-background-color: linear-gradient(to bottom right,#4d6eab ,#000000 );
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    
+}
+/* Add hover effects for buttons */
+.button:hover {
+    -fx-background-color: #263f73;
+}
+.button:pressed{
+	-fx-background-color: linear-gradient(to right, #263f73, #4d6eab);
+}
+.root{
+	-fx-background-color: linear-gradient(to top, #000000, #ffffff);
+}
+/* #image{
+	-fx-blend-mode: color-burn ;
+}*/
+.label 
+{ 
+	-fx-font-family: 'Verdana Bold Italic';
+    -fx-font-size: 20.0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 2, 2);
+    -fx-text-fill: white;
+    }
+#remarklabel
+{ 
+	-fx-font-family: 'Verdana Bold Italic';
+    -fx-font-size: 23.0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 2, 2);
+    -fx-text-fill: #000000;
+    }
+ #rlabel
+{ 
+	-fx-font-family: 'Verdana Bold Italic';
+    -fx-font-size: 38.0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 2, 2);
+    -fx-text-fill: #000000;
+    }   

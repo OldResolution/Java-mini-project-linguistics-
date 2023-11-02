@@ -6,118 +6,98 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.LessonController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="700.0" stylesheets="@lesson.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.LessonController">
    <left>
-      <VBox prefHeight="400.0" prefWidth="140.0" style="-fx-background-color: #191970;" BorderPane.alignment="CENTER">
+      <VBox fx:id="vbox" prefHeight="474.0" prefWidth="208.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="dashboardpage" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OpenProfile" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: white; -fx-border-width: 0.1px;" text="Profile" textFill="#faf4f4">
+            <Button fx:id="dashboardpage" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OpenProfile" prefHeight="80.0" prefWidth="206.0" text="Profile" textFill="#faf4f4">
                <font>
                   <Font name="SansSerif Bold" size="16.0" />
                </font>
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../icons/profile.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="coursepage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#OpenCourse" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: white; -fx-border-width: 0.1px;" text="Courses " textFill="#f2f0f0">
+            <Button fx:id="coursepage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#OpenCourse" prefHeight="80.0" prefWidth="206.0" text="Courses " textFill="#f2f0f0">
                <font>
                   <Font name="SansSerif Bold" size="16.0" />
                </font>
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../icons/course.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="lessonpage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: white; -fx-border-width: 0.1px;" text="Lessons" textFill="WHITE">
+            <Button fx:id="lessonpage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="206.0" text="Lessons" textFill="WHITE">
                <font>
                   <Font name="SansSerif Bold" size="16.0" />
                </font>
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../icons/lesson.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="quizzespage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="119.0" mnemonicParsing="false" onAction="#OpenQuiz" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: white; -fx-border-width: 0.1px;" text="Quizzes" textFill="WHITE">
+            <Button fx:id="quizzespage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="119.0" mnemonicParsing="false" onAction="#OpenQuiz" prefHeight="80.0" prefWidth="206.0" text="Quizzes" textFill="WHITE">
                <font>
                   <Font name="SansSerif Bold" size="16.0" />
                </font>
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../icons/quiz.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="reportpage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" onAction="#OpenReport" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #1959b3; -fx-border-color: white; -fx-border-width: 0.1px;" text="FeedBack" textFill="#faeeee">
+            <Button fx:id="reportpage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" onAction="#OpenReport" prefHeight="80.0" prefWidth="206.0" text="FeedBack" textFill="#faeeee">
                <font>
                   <Font name="SansSerif Bold" size="16.0" />
                </font>
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../icons/report.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <ButtonBar prefHeight="40.0" prefWidth="200.0">
-               <buttons>
-                <Button fx:id="logout" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="31.2" prefWidth="75.2" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Logout">
-                     <font>
-                        <Font name="SansSerif Bold Italic" size="16.0" />
-                     </font>
-                  </Button>
-               </buttons>
-            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" />
          </children>
       </VBox>
    </left>
-   <top>
-      <HBox prefHeight="86.0" prefWidth="700.0" style="-fx-background-color: #191970;" BorderPane.alignment="CENTER">
-         <children>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="78.0" prefWidth="297.0" style="-fx-background-color: TRANSPARENT;" text="LINGUISTICS" textFill="WHITE">
-               <font>
-                  <Font name="SansSerif Bold Italic" size="36.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-   </top>
    <center>
       <AnchorPane prefHeight="211.0" prefWidth="202.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="lesson1" layoutX="55.0" layoutY="101.0" mnemonicParsing="false" onAction="#Lesson_1_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 1" AnchorPane.leftAnchor="55.0">
+            <Button fx:id="l1button" layoutX="41.0" layoutY="187.0" mnemonicParsing="false" onAction="#Lesson_1_Action" prefHeight="51.0" prefWidth="196.0" text="Alphabets" AnchorPane.leftAnchor="41.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson2" layoutX="331.0" layoutY="101.0" mnemonicParsing="false" onAction="#Lesson_2_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 2" AnchorPane.leftAnchor="331.0">
+            <Button fx:id="l2button" layoutX="282.0" layoutY="187.0" mnemonicParsing="false" onAction="#Lesson_2_Action" prefHeight="51.0" prefWidth="196.0" text="Numbers" AnchorPane.leftAnchor="282.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson3" layoutX="55.0" layoutY="232.0" mnemonicParsing="false" onAction="#Lesson_3_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 3" AnchorPane.leftAnchor="55.0">
+            <Button fx:id="l3button" layoutX="151.0" layoutY="332.0" mnemonicParsing="false" onAction="#Lesson_3_Action" prefHeight="51.0" prefWidth="236.0" text="Basic Conversations" AnchorPane.leftAnchor="151.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="lesson4" layoutX="331.0" layoutY="232.0" mnemonicParsing="false" onAction="#Lesson_4_Action" style="-fx-background-color: #1959b3; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;" text="Lesson 4" AnchorPane.leftAnchor="331.0">
+          <Button fx:id="logout" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="32.0" prefWidth="102.0" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Signout">
                <font>
-                  <Font name="System Bold Italic" size="24.0" />
+                  <Font name="SansSerif Bold Italic" size="16.0" />
                </font>
             </Button>
          </children>
