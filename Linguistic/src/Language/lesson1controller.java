@@ -289,6 +289,7 @@ if (counter==1) {
 }
 	@FXML
 	void getback(ActionEvent event) throws IOException{
+	counter=0;
 	Parent root = FXMLLoader.load(getClass().getResource("lesson.fxml"));
 	stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 	scene = new Scene(root);

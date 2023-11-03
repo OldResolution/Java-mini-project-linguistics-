@@ -50,7 +50,9 @@ public class Controller {
         String Url = "jdbc:mysql://localhost:3306/language";
         String DBUser = "root";
         String DBPassword = "oracle";
-
+    	if (UserField.getText().isEmpty() || PassField.getText().isEmpty()) {
+    		showError("NULL ERROR", "Failed to insert data into the database.");
+    	}else {
         try (Connection connection = DriverManager.getConnection(Url, DBUser, DBPassword)) {
             String query = "SELECT * FROM login WHERE Username = ? AND Password = ?";
             try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
@@ -78,7 +80,7 @@ public class Controller {
             showError("FXML Loading Error", "An error occurred while loading the FXML file.");
         }
     }
-
+    }
 
     public void OpenSignupAction(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("SignUp.fxml"));

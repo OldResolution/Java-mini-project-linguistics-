@@ -28,7 +28,7 @@
             <Font name="SansSerif Bold Italic" size="17.0" />
          </font>
       </Button>
-      <Button fx:id="reportpage" layoutX="504.0" layoutY="7.0" mnemonicParsing="false" onAction="#OpenReport" style="-fx-background-radius: 100px; -fx-background-color: red;" text="REPORT">
+      <Button fx:id="reportpage" layoutX="492.0" layoutY="6.0" mnemonicParsing="false" onAction="#OpenReport" style="-fx-background-radius: 100px; -fx-background-color: red;" text="Feedback">
          <font>
             <Font name="Calibri Bold" size="14.0" />
          </font>

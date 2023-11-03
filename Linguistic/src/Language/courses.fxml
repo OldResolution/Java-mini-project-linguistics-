@@ -78,8 +78,8 @@
    <center>
       <AnchorPane fx:id="root" prefHeight="474.0" prefWidth="532.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="lessonbutton" layoutX="34.0" layoutY="219.0" mnemonicParsing="false" onAction="#OpenLessons" prefHeight="80.0" prefWidth="401.0" text="Lessons" textFill="#fdfdff" />
-            <Button fx:id="quizbutton" layoutX="34.0" layoutY="351.0" mnemonicParsing="false" onAction="#OpenQuiz" prefHeight="80.0" prefWidth="401.0" text="Quiz" textFill="#fdfdff">
+            <Button fx:id="lessonbutton" layoutX="8.0" layoutY="237.0" mnemonicParsing="false" onAction="#OpenLessons" prefHeight="80.0" prefWidth="485.0" text="Lessons" textFill="#fdfdff" />
+            <Button fx:id="quizbutton" layoutX="7.0" layoutY="359.0" mnemonicParsing="false" onAction="#OpenQuiz" prefHeight="80.0" prefWidth="488.0" text="Quiz" textFill="#fdfdff">
                <font>
                   <Font name="SansSerif Bold Italic" size="32.0" />
                </font>
