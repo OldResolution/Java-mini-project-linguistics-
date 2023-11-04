@@ -31,7 +31,7 @@ public class Controller {
     @FXML
     private Button cancelButton;
     
-    //@FXML
+   //@FXML
     //private TextField passwordTextField;
 
     //@FXML
@@ -47,7 +47,7 @@ public class Controller {
         String password = PassField.getText();
 
         // Database connection
-        String Url = "jdbc:mysql://localhost:3306/language";
+        String Url = "jdbc:mysql://localhost:3306/languages";
         String DBUser = "root";
         String DBPassword = "oracle";
     	if (UserField.getText().isEmpty() || PassField.getText().isEmpty()) {

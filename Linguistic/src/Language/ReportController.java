@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class ReportController implements Initializable{
@@ -26,7 +27,8 @@ public class ReportController implements Initializable{
 	
 	 @FXML
 	 TextArea comment;
-	 
+	 @FXML
+	 TextField username;
 	 @FXML
 	 Button goback,submit,signout;
 	 
@@ -77,15 +79,17 @@ public class ReportController implements Initializable{
  }
 	public void Feedback(ActionEvent event) {
 		String feedback = comment.getText();
-		
-	    String Url = "jdbc:mysql://localhost:3306/language";
+		String user= username.getText();
+	    
+		String Url = "jdbc:mysql://localhost:3306/languages";
 	    String DBUser = "root";
 	    String DBPassword = "oracle";
 
 	    try (Connection connection = DriverManager.getConnection(Url, DBUser, DBPassword)) {
-	        String query = "INSERT INTO feedback (feedback) VALUES (?)";
+	        String query = "INSERT INTO feedback (feedback,username) VALUES (?,?)";
 	        try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 	        	preparedStatement.setString(1, feedback);
+	        	preparedStatement.setString(2,user);
 	            int rowsAffected = preparedStatement.executeUpdate(); // Use executeUpdate() for INSERT
  
 	            if (rowsAffected > 0) {

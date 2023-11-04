@@ -31,7 +31,9 @@ import java.sql.SQLException;
 	    public Button Back;
 	    @FXML
 	    public ProgressIndicator correct_progress, wrong_progress;
-
+	    @FXML
+	    public TextField username;
+	    
 	    int correct;
 	    int wrong;
 	    
@@ -79,15 +81,17 @@ import java.sql.SQLException;
 	    }
 	public void Marks(ActionEvent event) {
 		String ob_marks= marks.getText();
+		String user=username.getText();
 		
-	    String Url = "jdbc:mysql://localhost:3306/language";
+	    String Url = "jdbc:mysql://localhost:3306/languages";
 	    String DBUser = "root";
 	    String DBPassword = "oracle";
 
 	    try (Connection connection = DriverManager.getConnection(Url, DBUser, DBPassword)) {
-	        String query = "INSERT INTO quiz (ob_marks) VALUES (?)";
+	        String query = "INSERT INTO quiz (ob_marks,username) VALUES (?,?)";
 	        try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 	            preparedStatement.setString(1, ob_marks);
+	            preparedStatement.setString(2, user);
 	            int rowsAffected = preparedStatement.executeUpdate(); // Use executeUpdate() for INSERT
 
 	            if (rowsAffected > 0) {

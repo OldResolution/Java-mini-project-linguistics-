@@ -66,10 +66,10 @@ public class SignUpController implements Initializable {
         LocalDate dateOfBirth= dateOfBirthDatePicker.getValue();
         String username = usernameTextField.getText();
         String password = passwordTextField.getText();
-    String Url = "jdbc:mysql://localhost:3306/language";
+    String Url = "jdbc:mysql://localhost:3306/languages";
     String DBUser = "root";
     String DBPassword = "oracle";
-    	if (usernameTextField.getText().isEmpty() || passwordTextField.getText().isEmpty()) {
+    	if (usernameTextField.getText().isEmpty() || passwordTextField.getText().isEmpty() || firstNameTextField.getText().isEmpty() || lastNameTextField.getText().isEmpty()) {
     		showError("NULL ERROR", "Please completely fill all the fields.");
     	}
     	else {

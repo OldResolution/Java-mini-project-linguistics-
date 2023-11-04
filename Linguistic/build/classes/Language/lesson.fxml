@@ -90,12 +90,12 @@
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="l3button" layoutX="151.0" layoutY="332.0" mnemonicParsing="false" onAction="#Lesson_3_Action" prefHeight="51.0" prefWidth="236.0" text="Basic Conversations" AnchorPane.leftAnchor="151.0">
+            <Button fx:id="l3button" layoutX="93.0" layoutY="328.0" mnemonicParsing="false" onAction="#Lesson_3_Action" prefHeight="51.0" prefWidth="336.0" text="Basic Conversations" AnchorPane.leftAnchor="93.0">
                <font>
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Button>
-          <Button fx:id="logout" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="32.0" prefWidth="102.0" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Signout">
+          <Button fx:id="logout" layoutX="363.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="43.0" prefWidth="126.0" style="-fx-background-radius: 25; -fx-background-color: RED;" text="Signout">
                <font>
                   <Font name="SansSerif Bold Italic" size="16.0" />
                </font>
