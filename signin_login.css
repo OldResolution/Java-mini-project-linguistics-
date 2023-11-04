@@ -1,0 +1,88 @@
+/* Styling for the background gradient */
+#langpane {
+    -fx-background-color: linear-gradient(to bottom right,#4d6eab,#263f73 );
+}
+
+/* Styling for the "Linguistic" and "Language learning app" labels */
+.label {
+    -fx-font-family: 'Verdana Bold Italic';
+    -fx-font-size: 24.0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 2, 2);
+}
+#sign_in{
+	-fx-background-color: transparent;
+	-fx-font-family: 'Verdana Bold Italic';
+	-fx-font-size:14;
+	-fx-text-fill: blue;
+}
+
+#registered{
+	    -fx-font-size: 16.0;
+		-fx-text-alignment: center ;
+}
+
+/* Styling for the title label */
+#msg{
+    -fx-font-family: 'System Bold';
+    -fx-font-size: 24.0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 2, 2);
+}
+
+/* Styling for the "Username" and "Password" labels */
+#username,#password,#firstname,#lastname {
+    -fx-font-size: 13.0;
+    -fx-text-fill:black;
+}
+
+/* Styling for text fields */
+.text-field {
+    -fx-prompt-text-fill: #263f73;
+}
+
+/* Styling for the "Login" and "Cancel" buttons */
+.button {
+    -fx-font-family: 'SansSerif Regular';
+    -fx-font-size: 12.0;
+    -fx-background-color: linear-gradient(to right, #263f73, #4d6eab);
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+
+.button:pressed{
+	-fx-background-color:#4d6eab;
+}
+
+/* Styling for the "Sign up!!" button */
+#SignupPageButton {
+    -fx-font-family: 'Comic Sans MS Bold';
+    -fx-font-size: 14.0;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #0f0161;
+}
+
+/* Styling for the password field */
+.password-field {
+    -fx-prompt-text-fill: #263f73;
+}
+
+#vbox{
+	-fx-background-color:linear-gradient(to right, #263f73, #4d6eab);
+}
+
+/* Styling for the login message label */
+#loginmessagelabel {
+    -fx-text-fill: #ff0000; /* Change the text color to red for error messages */
+}
+
+/* Styling for the "Don't have an account?" label */
+#noaccount {
+    -fx-font-family: 'System Bold';
+    -fx-text-fill: #000000;
+    -fx-font-size: 15.0;
+}
+
+/* Add hover effects for buttons */
+.button:hover {
+    -fx-background-color: #312081;
+}

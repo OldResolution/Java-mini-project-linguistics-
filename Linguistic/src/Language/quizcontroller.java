@@ -306,7 +306,14 @@ public void opt4clicked(ActionEvent event) {
 
 @FXML
 void Goback(ActionEvent event) throws IOException {
+<<<<<<< HEAD
     Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+=======
+	counter=0;
+	correct=0;
+	wrong=0;
+	Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+>>>>>>> savin
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);

@@ -3,11 +3,15 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<<<<<<< HEAD
 <?import javafx.scene.control.TextField?>
+=======
+>>>>>>> savin
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<<<<<<< HEAD
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -49,6 +53,26 @@
             <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-radius: 1px; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="last" mnemonicParsing="false" onAction="#last" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3;" text="Previous" textFill="WHITE">
+=======
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="625.0" stylesheets="@lesson3.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.lesson3controller">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <VBox fx:id="vbox1" prefHeight="400.0" prefWidth="155.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="goback" mnemonicParsing="false" onAction="#getback" prefHeight="70.0" prefWidth="138.0" text="GO BACK" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="last" mnemonicParsing="false" onAction="#last" prefHeight="62.0" prefWidth="159.0" text="Previous" textFill="WHITE">
+>>>>>>> savin
                      <VBox.margin>
                         <Insets top="90.0" />
                      </VBox.margin>
@@ -60,9 +84,27 @@
             </VBox>
          </left>
          <right>
+<<<<<<< HEAD
             <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3; -fx-border-radius: 25px;" text="Next" textFill="WHITE">
+=======
+            <VBox fx:id="vbox2" prefHeight="400.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="photo" mnemonicParsing="false" onAction="#playAudio" prefHeight="77.0" prefWidth="102.0">
+                     <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/audio.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="62.0" prefWidth="163.0" text="Next" textFill="WHITE">
+>>>>>>> savin
                      <VBox.margin>
                         <Insets top="90.0" />
                      </VBox.margin>
@@ -76,6 +118,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
+<<<<<<< HEAD
                   <ImageView fx:id="apple" fitHeight="150.0" fitWidth="200.0" layoutX="97.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../contents/lion.jpg" />
@@ -84,11 +127,20 @@
                   <Button fx:id="english" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" style="-fx-background-color: #1959b3;" text="English" textFill="WHITE" />
                   <Button fx:id="hindi" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #1959b3;" text="Hindi" textFill="WHITE" />
                   <Label fx:id="info" layoutX="86.0" layoutY="211.0" prefHeight="64.0" prefWidth="184.0" text="वर्णमाला में स्थान: | ध्वनिक उच्चारण: /एल/" wrapText="true">
+=======
+                  <Button fx:id="ab" layoutX="50.0" layoutY="236.0" mnemonicParsing="false" onAction="#english" prefHeight="45.0" prefWidth="211.0" text="English" textFill="WHITE" />
+                  <Button fx:id="ab" layoutX="50.0" layoutY="306.0" mnemonicParsing="false" onAction="#hindi" prefHeight="45.0" prefWidth="211.0" stylesheets="@lessons.css" text="Hindi" textFill="WHITE" />
+                  <Label fx:id="info" layoutX="19.0" layoutY="32.0" prefHeight="159.0" prefWidth="290.0" text="नमस्ते, मेरा नाम [आपका नाम] है।" wrapText="true">
+>>>>>>> savin
                      <font>
                         <Font name="SansSerif Regular" size="14.0" />
                      </font>
                   </Label>
+<<<<<<< HEAD
                </children>
+=======
+                     </children>
+>>>>>>> savin
             </AnchorPane>
          </center>
       </BorderPane>

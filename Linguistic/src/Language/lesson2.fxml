@@ -2,12 +2,16 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<<<<<<< HEAD
 <?import javafx.scene.control.Label?>
+=======
+>>>>>>> savin
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<<<<<<< HEAD
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -49,6 +53,26 @@
             <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-radius: 1px; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="last" mnemonicParsing="false" onAction="#last" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3;" text="Previous" textFill="WHITE">
+=======
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@lessons.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.lesson2controller">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <VBox fx:id="vbox1" prefHeight="336.0" prefWidth="122.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="goback" mnemonicParsing="false" onAction="#getback" prefHeight="78.0" prefWidth="100.0" text="GO BACK" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="last" mnemonicParsing="false" onAction="#last" prefHeight="62.0" prefWidth="131.0" text="Previous" textFill="WHITE">
+>>>>>>> savin
                      <VBox.margin>
                         <Insets top="90.0" />
                      </VBox.margin>
@@ -60,9 +84,27 @@
             </VBox>
          </left>
          <right>
+<<<<<<< HEAD
             <VBox prefHeight="336.0" prefWidth="122.0" style="-fx-background-color: #191970; -fx-border-color: #ffffff;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="62.0" prefWidth="131.0" style="-fx-background-color: #1959b3; -fx-border-radius: 25px;" text="Next" textFill="WHITE">
+=======
+            <VBox fx:id="vbox2" prefHeight="336.0" prefWidth="122.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="audio" mnemonicParsing="false" onAction="#playAudio" prefHeight="78.0" prefWidth="100.0">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/audio.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="62.0" prefWidth="131.0" text="Next" textFill="WHITE">
+>>>>>>> savin
                      <VBox.margin>
                         <Insets top="90.0" />
                      </VBox.margin>
@@ -76,6 +118,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
+<<<<<<< HEAD
                   <ImageView fx:id="apple" fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../contents/fish.jpg" />
@@ -88,6 +131,17 @@
                         <Font name="SansSerif Regular" size="14.0" />
                      </font>
                   </Label>
+=======
+                  <ImageView fx:id="example" fitHeight="244.0" fitWidth="245.0" layoutX="51.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../numbers/one.jpg" />
+                     </image></ImageView>
+                  <TextField fx:id="pronounce" alignment="TOP_CENTER" editable="false" layoutX="-3.0" layoutY="14.0" prefHeight="98.0" prefWidth="358.0" text="1 - १) - One">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </TextField>
+>>>>>>> savin
                </children>
             </AnchorPane>
          </center>

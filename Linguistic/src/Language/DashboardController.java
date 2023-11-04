@@ -2,6 +2,10 @@
 package Language;
 
 import java.io.IOException;
+<<<<<<< HEAD
+=======
+import java.math.BigDecimal;
+>>>>>>> savin
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -42,6 +46,7 @@ public class DashboardController implements Initializable {
     
     private Stage stage;
     private Scene scene;
+<<<<<<< HEAD
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -50,6 +55,24 @@ public class DashboardController implements Initializable {
     @FXML
     void OpenCourses(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("course.fxml"));
+=======
+    double progress1,progress2,progress3,progress4;
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+    }    
+    public void increaseprogress() {
+    	progress1=resultcontroller.progress1;
+    	progress2=LessonController.progress1;
+    	progress3=resultcontroller.progress2;
+    	progress4=LessonController.progress2;
+    	QuizzesPB.setProgress(progress3);
+    	CoursePB.setProgress(progress1+progress4);
+    	LessonsPB.setProgress(progress2);
+    }
+    @FXML
+    void OpenCourses(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("courses.fxml"));
+>>>>>>> savin
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
@@ -63,6 +86,10 @@ public class DashboardController implements Initializable {
                 scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
+<<<<<<< HEAD
+=======
+                
+>>>>>>> savin
     }
     @FXML
     void OpenReport(ActionEvent event) throws IOException {
@@ -74,6 +101,13 @@ public class DashboardController implements Initializable {
     }
     @FXML
     void LogoutAction(ActionEvent event) throws IOException {
+<<<<<<< HEAD
+=======
+    	progress1=0;
+    	progress2=0;
+    	progress3=0;
+    	progress4=0;
+>>>>>>> savin
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
@@ -82,6 +116,7 @@ public class DashboardController implements Initializable {
     }
     @FXML
     void OpenQuiz(ActionEvent event) throws IOException {
+<<<<<<< HEAD
         Parent root = FXMLLoader.load(getClass().getResource("QuizPage.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
@@ -89,3 +124,12 @@ public class DashboardController implements Initializable {
                 stage.show();
     }
 }
+=======
+    	Parent root = FXMLLoader.load(getClass().getResource("QuizPage.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();       
+    }
+}
+>>>>>>> savin

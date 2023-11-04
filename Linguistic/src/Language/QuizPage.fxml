@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <AnchorPane prefHeight="392.0" prefWidth="587.0" style="-fx-background-color: #ffffff; -fx-border-radius: 32px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.quizcontroller">
    <children>
       <Label fx:id="question" layoutX="42.0" layoutY="57.0" prefHeight="90.0" prefWidth="491.0" style="-fx-background-color: white; -fx-border-color: #1959b3; -fx-border-width: 2px; -fx-background-radius: 25px;" text="1. How many consonants are there in the English Alphabets?" wrapText="true">
@@ -13,26 +14,48 @@
          </font>
       </Label>
       <Button fx:id="opt1" layoutX="43.0" layoutY="178.0" mnemonicParsing="false" onAction="#opt1clicked" prefHeight="57.0" prefWidth="236.0" style="-fx-background-color: #1959b3; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Button" textFill="WHITE">
+=======
+<AnchorPane prefHeight="392.0" prefWidth="587.0" stylesheets="@quiz.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.quizcontroller">
+   <children>
+      <Label fx:id="question" layoutX="43.0" layoutY="57.0" prefHeight="101.0" prefWidth="490.0" text="1. How many consonants are there in the English Alphabets?" wrapText="true" />
+      <Button fx:id="opt1" layoutX="43.0" layoutY="214.0" mnemonicParsing="false" onAction="#opt1clicked" prefHeight="57.0" prefWidth="236.0" text="Button" textFill="WHITE">
+>>>>>>> savin
          <font>
             <Font name="SansSerif Bold Italic" size="17.0" />
          </font>
       </Button>
+<<<<<<< HEAD
       <Button id="opt3" fx:id="opt3" layoutX="43.0" layoutY="261.0" mnemonicParsing="false" onAction="#opt3clicked" prefHeight="57.0" prefWidth="236.0" style="-fx-background-color: #1959b3; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Button" textFill="WHITE">
+=======
+      <Button id="opt3" fx:id="opt3" layoutX="43.0" layoutY="298.0" mnemonicParsing="false" onAction="#opt3clicked" prefHeight="57.0" prefWidth="236.0" text="Button" textFill="WHITE">
+>>>>>>> savin
          <font>
             <Font name="SansSerif Bold Italic" size="17.0" />
          </font>
       </Button>
+<<<<<<< HEAD
       <Button id="opt4" fx:id="opt4" layoutX="300.0" layoutY="261.0" mnemonicParsing="false" onAction="#opt4clicked" prefHeight="57.0" prefWidth="236.0" style="-fx-background-color: #1959b3; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Button" textFill="WHITE">
+=======
+      <Button id="opt4" fx:id="opt4" layoutX="300.0" layoutY="298.0" mnemonicParsing="false" onAction="#opt4clicked" prefHeight="57.0" prefWidth="236.0" text="Button" textFill="WHITE">
+>>>>>>> savin
          <font>
             <Font name="SansSerif Bold Italic" size="17.0" />
          </font>
       </Button>
+<<<<<<< HEAD
       <Button id="opt2" fx:id="opt2" layoutX="300.0" layoutY="178.0" mnemonicParsing="false" onAction="#opt2clicked" prefHeight="57.0" prefWidth="236.0" style="-fx-background-color: #1959b3; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Button" textFill="WHITE">
+=======
+      <Button id="opt2" fx:id="opt2" layoutX="300.0" layoutY="214.0" mnemonicParsing="false" onAction="#opt2clicked" prefHeight="57.0" prefWidth="236.0" text="Button" textFill="WHITE">
+>>>>>>> savin
          <font>
             <Font name="SansSerif Bold Italic" size="17.0" />
          </font>
       </Button>
+<<<<<<< HEAD
       <Button fx:id="reportpage" layoutX="512.0" layoutY="14.0" mnemonicParsing="false" onAction="#OpenReport" style="-fx-background-radius: 100px; -fx-background-color: red;" text="REPORT">
+=======
+      <Button fx:id="reportpage" layoutX="492.0" layoutY="6.0" mnemonicParsing="false" onAction="#OpenReport" style="-fx-background-radius: 100px; -fx-background-color: red;" text="Feedback">
+>>>>>>> savin
          <font>
             <Font name="Calibri Bold" size="14.0" />
          </font>

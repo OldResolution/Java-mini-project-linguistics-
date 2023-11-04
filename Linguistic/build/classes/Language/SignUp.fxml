@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<<<<<<< HEAD
+=======
+<?import javafx.scene.control.DatePicker?>
+>>>>>>> savin
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -9,12 +13,20 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.SignUpController">
+=======
+<AnchorPane prefHeight="410.0" prefWidth="584.0" stylesheets="@signin_login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Language.SignUpController">
+>>>>>>> savin
          <children>
             <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="520.0">
                <children>
                   <Button fx:id="loginpageButton" alignment="TOP_CENTER" layoutX="170.0" layoutY="344.0" mnemonicParsing="false" onAction="#OpenLoginPage" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log in!!" textFill="#263f73" underline="true" />
+<<<<<<< HEAD
                   <Label alignment="CENTER" layoutX="67.0" layoutY="43.0" prefHeight="27.0" prefWidth="179.0" text="Sign Up">
+=======
+                  <Label alignment="CENTER" layoutX="61.0" layoutY="25.0" prefHeight="27.0" prefWidth="179.0" text="Sign Up">
+>>>>>>> savin
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -22,6 +34,7 @@
                         <InnerShadow />
                      </effect>
                   </Label>
+<<<<<<< HEAD
                   <Label layoutX="36.0" layoutY="192.0" text="Username">
                      <font>
                         <Font size="14.0" />
@@ -34,31 +47,58 @@
                   </Label>
                   <TextField fx:id="usernameTextField" layoutX="105.0" layoutY="192.0" prefHeight="26.0" prefWidth="165.0" promptText="Username" />
                   <Button fx:id="SignupButton" layoutX="32.0" layoutY="284.0" mnemonicParsing="false" onAction="#SignupAction" prefHeight="38.0" prefWidth="238.0" style="-fx-background-color: #263F73; -fx-cursor: hand;" text="Sign Up" textFill="WHITE">
+=======
+                  <TextField fx:id="usernameTextField" layoutX="35.0" layoutY="214.0" prefHeight="26.0" prefWidth="231.0" promptText="Username" />
+                  <Button fx:id="SignupButton" layoutX="32.0" layoutY="284.0" mnemonicParsing="false" onAction="#SignupAction" prefHeight="38.0" prefWidth="238.0" text="Sign Up" textFill="WHITE">
+>>>>>>> savin
                      <font>
                         <Font name="SansSerif Regular" size="12.0" />
                      </font>
                   </Button>
+<<<<<<< HEAD
                   <Label fx:id="loginmessagelabel" alignment="CENTER" layoutX="16.0" layoutY="82.0" prefHeight="18.0" prefWidth="270.0" />
                   <AnchorPane layoutX="286.0" layoutY="-7.0" prefHeight="418.0" prefWidth="238.0" style="-fx-background-color: #263f73;">
                      <children>
                         <Label alignment="BOTTOM_CENTER" layoutX="6.0" layoutY="137.0" prefHeight="17.0" prefWidth="216.0" text="Linguistic" textFill="#f8f1f1">
+=======
+                  <Label fx:id="loginmessagelabel" alignment="CENTER" layoutX="15.0" layoutY="68.0" prefHeight="18.0" prefWidth="270.0" />
+                  <AnchorPane fx:id="langpane" layoutX="286.0" layoutY="-7.0" prefHeight="418.0" prefWidth="296.0">
+                     <children>
+                        <Label alignment="BOTTOM_CENTER" layoutX="32.0" layoutY="138.0" prefHeight="17.0" prefWidth="216.0" text="Linguistic" textFill="#f8f1f1">
+>>>>>>> savin
                            <font>
                               <Font name="Verdana Bold Italic" size="24.0" />
                            </font>
                         </Label>
+<<<<<<< HEAD
                         <Label alignment="CENTER" layoutX="1.0" layoutY="183.0" prefHeight="50.0" prefWidth="223.0" text="Language learning app" textFill="#fcf9f9">
+=======
+                        <Label alignment="CENTER" layoutX="26.0" layoutY="161.0" prefHeight="97.0" prefWidth="261.0" text="Language Learning App" textAlignment="CENTER" textFill="#fcf9f9" wrapText="true">
+>>>>>>> savin
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
+<<<<<<< HEAD
                         <Line endX="89.0" layoutX="101.0" layoutY="176.0" startX="-75.0" />
                      </children>
                   </AnchorPane>
                   <Label layoutX="53.0" layoutY="348.0" prefHeight="18.0" prefWidth="126.0" text="Already Registered?">
+=======
+                        <Line endX="186.0" layoutX="101.0" layoutY="176.0" startX="-75.0" />
+                     </children>
+                  </AnchorPane>
+            <TextField fx:id="firstNameTextField" layoutX="34.0" layoutY="98.0" prefHeight="26.0" prefWidth="231.0" promptText="First name" />
+            <TextField fx:id="lastNameTextField" layoutX="35.0" layoutY="136.0" prefHeight="26.0" prefWidth="231.0" promptText="Last name" />
+            <PasswordField fx:id="passwordTextField" layoutX="35.0" layoutY="249.0" onAction="#SignupAction" prefHeight="26.0" prefWidth="231.0" promptText="Password" />
+            <DatePicker fx:id="dateOfBirthDatePicker" layoutX="35.0" layoutY="175.0" prefHeight="26.0" prefWidth="231.0" promptText="MM/DD/YY(DOB)" />
+                  <Label fx:id="registered" layoutX="39.0" layoutY="329.0" prefHeight="30.0" prefWidth="238.0" text="     Already Registered?" textAlignment="CENTER" wrapText="true">
+>>>>>>> savin
                      <font>
                         <Font name="SansSerif Bold" size="12.0" />
                      </font>
                   </Label>
+<<<<<<< HEAD
             <Label layoutX="29.0" layoutY="121.0" prefHeight="26.0" prefWidth="75.0" text="First Name">
                <font>
                   <Font size="14.0" />
@@ -76,3 +116,14 @@
             </AnchorPane>
          </children>
 </AnchorPane>
+=======
+            <Button fx:id="sign_in" layoutX="111.0" layoutY="356.0" mnemonicParsing="false" onAction="#OpenLoginPage" text="Sign In" textFill="#1a00ff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+               </children>
+            </AnchorPane>
+         </children>
+</AnchorPane>
+>>>>>>> savin
