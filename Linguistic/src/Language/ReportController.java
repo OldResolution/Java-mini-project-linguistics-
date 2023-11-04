@@ -86,7 +86,7 @@ public class ReportController implements Initializable{
 	    String DBPassword = "oracle";
 
 	    try (Connection connection = DriverManager.getConnection(Url, DBUser, DBPassword)) {
-	        String query = "INSERT INTO feedback (feedback,username) VALUES (?,?)";
+	        String query = "INSERT INTO feedback (comment,username) VALUES (?,?)";
 	        try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 	        	preparedStatement.setString(1, feedback);
 	        	preparedStatement.setString(2,user);

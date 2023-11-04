@@ -72,7 +72,7 @@
                   </ImageView>
                   <Button fx:id="english" layoutX="9.0" layoutY="307.0" mnemonicParsing="false" onAction="#english" prefHeight="40.0" prefWidth="82.0" text="English" textFill="WHITE" />
                   <Button fx:id="hindi" layoutX="11.0" layoutY="359.0" mnemonicParsing="false" onAction="#hindi" prefHeight="40.0" prefWidth="78.0" stylesheets="@lessons.css" text="Hindi" textFill="WHITE" />
-                  <Label fx:id="info" layoutX="110.0" layoutY="293.0" prefHeight="108.0" prefWidth="249.0" text="वर्णमाला में स्थान: पहलाध्वनिक उच्चारण: /ए/" wrapText="true">
+                  <Label fx:id="info" layoutX="110.0" layoutY="293.0" prefHeight="108.0" prefWidth="249.0" text="वर्णमाला में स्थान: पहला ध्वनिक उच्चारण: /ए/" wrapText="true">
                      <font>
                         <Font name="SansSerif Regular" size="14.0" />
                      </font>
