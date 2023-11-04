@@ -69,7 +69,7 @@ public class lesson2controller implements Initializable{
 	Image image14 = new Image(getClass().getResourceAsStream("/numbers/14.jpg"));
 	Image image15 = new Image(getClass().getResourceAsStream("/numbers/15.jpg"));
 	Image image16 = new Image(getClass().getResourceAsStream("/numbers/16.jpg"));
-	//Image image17 = new Image(getClass().getResourceAsStream("/numbers/17.jpg"));
+	Image image17 = new Image(getClass().getResourceAsStream("/numbers/17.jpeg"));
 	Image image18 = new Image(getClass().getResourceAsStream("/numbers/18.jpg"));
 	Image image19 = new Image(getClass().getResourceAsStream("/numbers/19.jpg"));
 	Image image20 = new Image(getClass().getResourceAsStream("/numbers/20.jpg"));
@@ -160,7 +160,7 @@ public class lesson2controller implements Initializable{
 			 break;
 		 case 16:
 			 pronounce.setText("17 - १७) - Seventeen");
-			 //example.setImage(image17);
+			 example.setImage(image17);
 			 break;
 		 case 17:
 			 pronounce.setText("18 - १८) - Eighteen");

@@ -68,7 +68,7 @@
                      <image>
                         <Image url="@../numbers/one.jpg" />
                      </image></ImageView>
-                  <TextField fx:id="pronounce" alignment="BASELINE_LEFT" editable="false" layoutX="40.0" layoutY="14.0" prefHeight="79.0" prefWidth="265.0" text="1 - १) - One">
+                  <TextField fx:id="pronounce" alignment="TOP_CENTER" editable="false" layoutX="-3.0" layoutY="14.0" prefHeight="98.0" prefWidth="358.0" text="1 - १) - One">
                      <font>
                         <Font size="34.0" />
                      </font>

@@ -43,17 +43,17 @@ public class DashboardController implements Initializable {
     
     private Stage stage;
     private Scene scene;
-    int progress1,progress3;
-    double progress2;
+    double progress1,progress2,progress3,progress4;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }    
     public void increaseprogress() {
-    	progress1=resultcontroller.progress;
-    	progress2=LessonController.progress;
-    	progress3=resultcontroller.progress;
+    	progress1=resultcontroller.progress1;
+    	progress2=LessonController.progress1;
+    	progress3=resultcontroller.progress2;
+    	progress4=LessonController.progress2;
     	QuizzesPB.setProgress(progress3);
-    	CoursePB.setProgress(progress1);
+    	CoursePB.setProgress(progress1+progress4);
     	LessonsPB.setProgress(progress2);
     }
     @FXML
@@ -84,6 +84,10 @@ public class DashboardController implements Initializable {
     }
     @FXML
     void LogoutAction(ActionEvent event) throws IOException {
+    	progress1=0;
+    	progress2=0;
+    	progress3=0;
+    	progress4=0;
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);

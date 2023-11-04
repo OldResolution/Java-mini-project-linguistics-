@@ -17,7 +17,7 @@ public class LessonController implements Initializable {
     private Stage stage;
     private Scene scene;
     
-    static double progress;
+    static double progress1,progress2;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -30,7 +30,8 @@ public class LessonController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        progress += 0.34;
+        progress1 += 0.34;
+        progress2 +=0.20;
     }
 
     @FXML
@@ -40,7 +41,8 @@ public class LessonController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        progress += 0.34;
+        progress1 += 0.34;
+        progress2 +=0.20;
     }
 
     @FXML
@@ -50,7 +52,8 @@ public class LessonController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        progress += 0.34;
+        progress1 += 0.34;
+        progress2 += 0.20;
     }
 
     @FXML

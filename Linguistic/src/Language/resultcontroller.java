@@ -38,7 +38,7 @@ import java.sql.SQLException;
 	    int wrong;
 	    
 	    
-	    static int progress;
+	    static double progress1,progress2;
 	    
 	    @FXML
 	    void QLpage(ActionEvent event) throws IOException{
@@ -47,7 +47,8 @@ import java.sql.SQLException;
 	        scene = new Scene(root);
 	        stage.setScene(scene);
 	        stage.show();
-	        progress += 100;
+	        progress1 += 0.5;
+	        progress2 += 1.0;
 	    }
 	    @FXML
 	    private void initialize() {
